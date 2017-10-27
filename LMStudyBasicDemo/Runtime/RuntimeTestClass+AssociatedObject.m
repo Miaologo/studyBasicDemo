@@ -9,7 +9,7 @@
 #import "RuntimeTestClass+AssociatedObject.h"
 #import "RuntimeKit.h"
 
-@interface RuntimeTestClass (AssociatedObject)
+@interface RuntimeTestClass ()
 
 @property (nonatomic, strong) NSString *dynamicAddProperty;
 

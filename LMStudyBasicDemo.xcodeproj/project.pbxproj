@@ -31,11 +31,11 @@
 		2242C6B21E5ABE4F0054F889 /* LMStudyBasicDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242C6B11E5ABE4F0054F889 /* LMStudyBasicDemoTests.m */; };
 		2242C6BD1E5ABE4F0054F889 /* LMStudyBasicDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242C6BC1E5ABE4F0054F889 /* LMStudyBasicDemoUITests.m */; };
 		2242C6CC1E5AC0EE0054F889 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242C6CB1E5AC0EE0054F889 /* NSObject+KVO.m */; };
-		2243A8C21F551379009C5875 /* AnimatedGIFImageSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 2243A8C11F551379009C5875 /* AnimatedGIFImageSerialization.m */; };
 		225FA7F61F3DA048001CBF16 /* LMTestKVCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 225FA7F51F3DA048001CBF16 /* LMTestKVCObject.m */; };
 		225FA7FD1F3DB804001CBF16 /* UIButton+titleImageStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 225FA7FC1F3DB804001CBF16 /* UIButton+titleImageStyle.m */; };
 		227297361F42956400B00B74 /* LMBasicDeviceInfoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 227297351F42956400B00B74 /* LMBasicDeviceInfoObject.m */; };
 		227297391F43F3FF00B00B74 /* NSObject+LMDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 227297381F43F3FF00B00B74 /* NSObject+LMDescription.m */; };
+		228DC1E41FA321EC002AA12B /* AnimatedGIFImageSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 228DC1E31FA321EC002AA12B /* AnimatedGIFImageSerialization.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,8 +102,6 @@
 		2242C6BE1E5ABE4F0054F889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2242C6CA1E5AC0EE0054F889 /* NSObject+KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVO.h"; sourceTree = "<group>"; };
 		2242C6CB1E5AC0EE0054F889 /* NSObject+KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
-		2243A8C01F551379009C5875 /* AnimatedGIFImageSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedGIFImageSerialization.h; sourceTree = "<group>"; };
-		2243A8C11F551379009C5875 /* AnimatedGIFImageSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedGIFImageSerialization.m; sourceTree = "<group>"; };
 		225FA7F41F3DA048001CBF16 /* LMTestKVCObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMTestKVCObject.h; sourceTree = "<group>"; };
 		225FA7F51F3DA048001CBF16 /* LMTestKVCObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMTestKVCObject.m; sourceTree = "<group>"; };
 		225FA7FB1F3DB804001CBF16 /* UIButton+titleImageStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+titleImageStyle.h"; sourceTree = "<group>"; };
@@ -112,6 +110,8 @@
 		227297351F42956400B00B74 /* LMBasicDeviceInfoObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMBasicDeviceInfoObject.m; sourceTree = "<group>"; };
 		227297371F43F3FF00B00B74 /* NSObject+LMDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LMDescription.h"; sourceTree = "<group>"; };
 		227297381F43F3FF00B00B74 /* NSObject+LMDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LMDescription.m"; sourceTree = "<group>"; };
+		228DC1E21FA321EC002AA12B /* AnimatedGIFImageSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedGIFImageSerialization.h; sourceTree = "<group>"; };
+		228DC1E31FA321EC002AA12B /* AnimatedGIFImageSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedGIFImageSerialization.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,21 +139,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		220FE3841F79FB6F0090F1F0 /* Basic Common UI */ = {
-			isa = PBXGroup;
-			children = (
-				220FE3851F79FC780090F1F0 /* LMRefreshBaseView.h */,
-				220FE3861F79FC780090F1F0 /* LMRefreshBaseView.m */,
-				220FE3881F7A2D1A0090F1F0 /* MAYRefreshHeaderView.h */,
-				220FE3891F7A2D1A0090F1F0 /* MAYRefreshHeaderView.m */,
-				220FE38B1F7A44930090F1F0 /* UIScrollView+LMRefreshHeaderView.h */,
-				220FE38C1F7A44930090F1F0 /* UIScrollView+LMRefreshHeaderView.m */,
-				220FE38E1F7A46190090F1F0 /* LMRefreshTestViewController.h */,
-				220FE38F1F7A46190090F1F0 /* LMRefreshTestViewController.m */,
-			);
-			name = "Basic Common UI";
-			sourceTree = "<group>";
-		};
 		2242C6881E5ABE4F0054F889 = {
 			isa = PBXGroup;
 			children = (
@@ -177,14 +162,14 @@
 		2242C6931E5ABE4F0054F889 /* LMStudyBasicDemo */ = {
 			isa = PBXGroup;
 			children = (
-				220FE3841F79FB6F0090F1F0 /* Basic Common UI */,
-				2243A8BF1F551345009C5875 /* Basic  */,
-				227297331F42952100B00B74 /* Basic Device Info */,
-				225FA7F71F3DB755001CBF16 /* UI */,
-				2272D4881F3AE81A00ECEC97 /* JS&Native */,
-				2242C6D01E5AE73D0054F889 /* RunLoop */,
-				2242C6CF1E5AE7350054F889 /* Runtime */,
-				2242C6CD1E5AE7140054F889 /* KVO/KVC */,
+				228DC1EA1FA32294002AA12B /* KVO-KVC */,
+				228DC1E91FA3227D002AA12B /* Runtime */,
+				228DC1E81FA32264002AA12B /* RunLoop */,
+				228DC1E71FA32246002AA12B /* UI Extension */,
+				228DC1E61FA32229002AA12B /* Basic Device Info */,
+				228DC1E51FA321EF002AA12B /* RefreshView */,
+				228DC1DE1FA32173002AA12B /* GIFImageSerialization */,
+				228DC1EB1FA322C0002AA12B /* JS&Native */,
 				2242C6971E5ABE4F0054F889 /* AppDelegate.h */,
 				2242C6981E5ABE4F0054F889 /* AppDelegate.m */,
 				2242C69A1E5ABE4F0054F889 /* ViewController.h */,
@@ -228,22 +213,58 @@
 			path = LMStudyBasicDemoUITests;
 			sourceTree = "<group>";
 		};
-		2242C6CD1E5AE7140054F889 /* KVO/KVC */ = {
+		228DC1DE1FA32173002AA12B /* GIFImageSerialization */ = {
 			isa = PBXGroup;
 			children = (
-				2242C6CA1E5AC0EE0054F889 /* NSObject+KVO.h */,
-				2242C6CB1E5AC0EE0054F889 /* NSObject+KVO.m */,
-				22370A181F2F2779005E30D9 /* LMKVOViewController.h */,
-				22370A191F2F2779005E30D9 /* LMKVOViewController.m */,
-				22370A1B1F2F2787005E30D9 /* LMKVCViewController.h */,
-				22370A1C1F2F2787005E30D9 /* LMKVCViewController.m */,
-				225FA7F41F3DA048001CBF16 /* LMTestKVCObject.h */,
-				225FA7F51F3DA048001CBF16 /* LMTestKVCObject.m */,
+				228DC1E21FA321EC002AA12B /* AnimatedGIFImageSerialization.h */,
+				228DC1E31FA321EC002AA12B /* AnimatedGIFImageSerialization.m */,
 			);
-			name = KVO/KVC;
+			path = GIFImageSerialization;
 			sourceTree = "<group>";
 		};
-		2242C6CF1E5AE7350054F889 /* Runtime */ = {
+		228DC1E51FA321EF002AA12B /* RefreshView */ = {
+			isa = PBXGroup;
+			children = (
+				220FE3851F79FC780090F1F0 /* LMRefreshBaseView.h */,
+				220FE3861F79FC780090F1F0 /* LMRefreshBaseView.m */,
+				220FE3881F7A2D1A0090F1F0 /* MAYRefreshHeaderView.h */,
+				220FE3891F7A2D1A0090F1F0 /* MAYRefreshHeaderView.m */,
+				220FE38B1F7A44930090F1F0 /* UIScrollView+LMRefreshHeaderView.h */,
+				220FE38C1F7A44930090F1F0 /* UIScrollView+LMRefreshHeaderView.m */,
+				220FE38E1F7A46190090F1F0 /* LMRefreshTestViewController.h */,
+				220FE38F1F7A46190090F1F0 /* LMRefreshTestViewController.m */,
+			);
+			path = RefreshView;
+			sourceTree = "<group>";
+		};
+		228DC1E61FA32229002AA12B /* Basic Device Info */ = {
+			isa = PBXGroup;
+			children = (
+				227297341F42956400B00B74 /* LMBasicDeviceInfoObject.h */,
+				227297351F42956400B00B74 /* LMBasicDeviceInfoObject.m */,
+			);
+			path = "Basic Device Info";
+			sourceTree = "<group>";
+		};
+		228DC1E71FA32246002AA12B /* UI Extension */ = {
+			isa = PBXGroup;
+			children = (
+				225FA7FB1F3DB804001CBF16 /* UIButton+titleImageStyle.h */,
+				225FA7FC1F3DB804001CBF16 /* UIButton+titleImageStyle.m */,
+			);
+			path = "UI Extension";
+			sourceTree = "<group>";
+		};
+		228DC1E81FA32264002AA12B /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				22370A131F2F272A005E30D9 /* LMRunloopViewController.m */,
+				22370A121F2F272A005E30D9 /* LMRunloopViewController.h */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		228DC1E91FA3227D002AA12B /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
 				2241F13A1E6956370063B144 /* RuntimeKit.h */,
@@ -259,50 +280,29 @@
 				22370A151F2F274E005E30D9 /* LMRumtimeViewController.h */,
 				22370A161F2F274E005E30D9 /* LMRumtimeViewController.m */,
 			);
-			name = Runtime;
+			path = Runtime;
 			sourceTree = "<group>";
 		};
-		2242C6D01E5AE73D0054F889 /* RunLoop */ = {
+		228DC1EA1FA32294002AA12B /* KVO-KVC */ = {
 			isa = PBXGroup;
 			children = (
-				22370A121F2F272A005E30D9 /* LMRunloopViewController.h */,
-				22370A131F2F272A005E30D9 /* LMRunloopViewController.m */,
+				2242C6CA1E5AC0EE0054F889 /* NSObject+KVO.h */,
+				2242C6CB1E5AC0EE0054F889 /* NSObject+KVO.m */,
+				22370A181F2F2779005E30D9 /* LMKVOViewController.h */,
+				22370A191F2F2779005E30D9 /* LMKVOViewController.m */,
+				22370A1B1F2F2787005E30D9 /* LMKVCViewController.h */,
+				22370A1C1F2F2787005E30D9 /* LMKVCViewController.m */,
+				225FA7F41F3DA048001CBF16 /* LMTestKVCObject.h */,
+				225FA7F51F3DA048001CBF16 /* LMTestKVCObject.m */,
 			);
-			name = RunLoop;
+			path = "KVO-KVC";
 			sourceTree = "<group>";
 		};
-		2243A8BF1F551345009C5875 /* Basic  */ = {
-			isa = PBXGroup;
-			children = (
-				2243A8C01F551379009C5875 /* AnimatedGIFImageSerialization.h */,
-				2243A8C11F551379009C5875 /* AnimatedGIFImageSerialization.m */,
-			);
-			name = "Basic ";
-			sourceTree = "<group>";
-		};
-		225FA7F71F3DB755001CBF16 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				225FA7FB1F3DB804001CBF16 /* UIButton+titleImageStyle.h */,
-				225FA7FC1F3DB804001CBF16 /* UIButton+titleImageStyle.m */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
-		227297331F42952100B00B74 /* Basic Device Info */ = {
-			isa = PBXGroup;
-			children = (
-				227297341F42956400B00B74 /* LMBasicDeviceInfoObject.h */,
-				227297351F42956400B00B74 /* LMBasicDeviceInfoObject.m */,
-			);
-			name = "Basic Device Info";
-			sourceTree = "<group>";
-		};
-		2272D4881F3AE81A00ECEC97 /* JS&Native */ = {
+		228DC1EB1FA322C0002AA12B /* JS&Native */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "JS&Native";
+			path = "JS&Native";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				220FE38D1F7A44930090F1F0 /* UIScrollView+LMRefreshHeaderView.m in Sources */,
+				228DC1E41FA321EC002AA12B /* AnimatedGIFImageSerialization.m in Sources */,
 				2242C69C1E5ABE4F0054F889 /* ViewController.m in Sources */,
 				227297391F43F3FF00B00B74 /* NSObject+LMDescription.m in Sources */,
 				22370A141F2F272A005E30D9 /* LMRunloopViewController.m in Sources */,
@@ -460,7 +461,6 @@
 				2242C6A21E5ABE4F0054F889 /* LMStudyBasicDemo.xcdatamodeld in Sources */,
 				225FA7FD1F3DB804001CBF16 /* UIButton+titleImageStyle.m in Sources */,
 				22370A1A1F2F2779005E30D9 /* LMKVOViewController.m in Sources */,
-				2243A8C21F551379009C5875 /* AnimatedGIFImageSerialization.m in Sources */,
 				225FA7F61F3DA048001CBF16 /* LMTestKVCObject.m in Sources */,
 				2242C6961E5ABE4F0054F889 /* main.m in Sources */,
 				220FE38A1F7A2D1A0090F1F0 /* MAYRefreshHeaderView.m in Sources */,

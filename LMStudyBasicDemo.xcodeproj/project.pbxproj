@@ -36,6 +36,7 @@
 		227297361F42956400B00B74 /* LMBasicDeviceInfoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 227297351F42956400B00B74 /* LMBasicDeviceInfoObject.m */; };
 		227297391F43F3FF00B00B74 /* NSObject+LMDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 227297381F43F3FF00B00B74 /* NSObject+LMDescription.m */; };
 		228DC1E41FA321EC002AA12B /* AnimatedGIFImageSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 228DC1E31FA321EC002AA12B /* AnimatedGIFImageSerialization.m */; };
+		228DC1F31FA3244D002AA12B /* UIScrollView+CYPullRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 228DC1F21FA3244D002AA12B /* UIScrollView+CYPullRefresh.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,8 @@
 		227297381F43F3FF00B00B74 /* NSObject+LMDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LMDescription.m"; sourceTree = "<group>"; };
 		228DC1E21FA321EC002AA12B /* AnimatedGIFImageSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedGIFImageSerialization.h; sourceTree = "<group>"; };
 		228DC1E31FA321EC002AA12B /* AnimatedGIFImageSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedGIFImageSerialization.m; sourceTree = "<group>"; };
+		228DC1F11FA3244D002AA12B /* UIScrollView+CYPullRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CYPullRefresh.h"; sourceTree = "<group>"; };
+		228DC1F21FA3244D002AA12B /* UIScrollView+CYPullRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CYPullRefresh.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +228,7 @@
 		228DC1E51FA321EF002AA12B /* RefreshView */ = {
 			isa = PBXGroup;
 			children = (
+				228DC1F01FA32431002AA12B /* CYPullRefresh */,
 				220FE3851F79FC780090F1F0 /* LMRefreshBaseView.h */,
 				220FE3861F79FC780090F1F0 /* LMRefreshBaseView.m */,
 				220FE3881F7A2D1A0090F1F0 /* MAYRefreshHeaderView.h */,
@@ -303,6 +307,15 @@
 			children = (
 			);
 			path = "JS&Native";
+			sourceTree = "<group>";
+		};
+		228DC1F01FA32431002AA12B /* CYPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				228DC1F11FA3244D002AA12B /* UIScrollView+CYPullRefresh.h */,
+				228DC1F21FA3244D002AA12B /* UIScrollView+CYPullRefresh.m */,
+			);
+			path = CYPullRefresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,6 +465,7 @@
 				2242C6991E5ABE4F0054F889 /* AppDelegate.m in Sources */,
 				22370A171F2F274E005E30D9 /* LMRumtimeViewController.m in Sources */,
 				2241F1421E6960CC0063B144 /* RuntimeTestClass+AssociatedObject.m in Sources */,
+				228DC1F31FA3244D002AA12B /* UIScrollView+CYPullRefresh.m in Sources */,
 				220FE3871F79FC780090F1F0 /* LMRefreshBaseView.m in Sources */,
 				2242C6CC1E5AC0EE0054F889 /* NSObject+KVO.m in Sources */,
 				220FE3901F7A46190090F1F0 /* LMRefreshTestViewController.m in Sources */,

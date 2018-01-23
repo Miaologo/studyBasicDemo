@@ -65,38 +65,38 @@
             endingLineNumber = "31"
             landmarkName = "-viewDidLoad"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__42-[LMRefreshTestViewController viewDidLoad]_block_invoke"
-                  moduleName = "LMStudyBasicDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Tim/LMStudyDemo/LMStudyBasicDemo/LMStudyBasicDemo/LMRefreshTestViewController.m"
-                  timestampString = "530531783.994387"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__42-[LMRefreshTestViewController viewDidLoad]_block_invoke_2"
-                  moduleName = "LMStudyBasicDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Tim/LMStudyDemo/LMStudyBasicDemo/LMStudyBasicDemo/LMRefreshTestViewController.m"
-                  timestampString = "530531783.996516"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LMStudyBasicDemo/Runtime/LMMethonSwizzlingViewController.m"
+            timestampString = "538389318.735186"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "-viewWillAppear:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LMStudyBasicDemo/Runtime/LMRumtimeViewController.m"
+            timestampString = "538389318.735271"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "-xxx_viewWillAppear:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

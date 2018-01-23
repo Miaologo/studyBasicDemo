@@ -6,7 +6,7 @@
 //  Copyright © 2017年 LM. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LMRootViewController.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
 #import "NSObject+KVO.h"
@@ -25,14 +25,14 @@
 
 @end
 
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface LMRootViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *contentArr;
 
 @end
 
-@implementation ViewController
+@implementation LMRootViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

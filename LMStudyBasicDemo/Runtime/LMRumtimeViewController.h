@@ -11,3 +11,7 @@
 @interface LMRumtimeViewController : UIViewController
 
 @end
+
+@interface LMRumtimeViewController(Tracking)
+
+@end

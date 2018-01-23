@@ -16,14 +16,12 @@
 		22370A171F2F274E005E30D9 /* LMRumtimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22370A161F2F274E005E30D9 /* LMRumtimeViewController.m */; };
 		22370A1A1F2F2779005E30D9 /* LMKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22370A191F2F2779005E30D9 /* LMKVOViewController.m */; };
 		22370A1D1F2F2787005E30D9 /* LMKVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22370A1C1F2F2787005E30D9 /* LMKVCViewController.m */; };
+		224025E22016D62200104A6A /* LMMethonSwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224025E12016D62200104A6A /* LMMethonSwizzlingViewController.m */; };
 		2241F13C1E6956370063B144 /* RuntimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2241F13B1E6956370063B144 /* RuntimeKit.m */; };
 		2241F13F1E695D830063B144 /* RuntimeTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2241F13E1E695D830063B144 /* RuntimeTestClass.m */; };
-		2241F1421E6960CC0063B144 /* RuntimeTestClass+AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2241F1411E6960CC0063B144 /* RuntimeTestClass+AssociatedObject.m */; };
-		2241F1451E6962860063B144 /* RuntimeTestClass+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 2241F1441E6962860063B144 /* RuntimeTestClass+Category.m */; };
-		2241F1481E6962BC0063B144 /* RuntimeTestClass+SwapMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 2241F1471E6962BC0063B144 /* RuntimeTestClass+SwapMethod.m */; };
 		2242C6961E5ABE4F0054F889 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242C6951E5ABE4F0054F889 /* main.m */; };
 		2242C6991E5ABE4F0054F889 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242C6981E5ABE4F0054F889 /* AppDelegate.m */; };
-		2242C69C1E5ABE4F0054F889 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242C69B1E5ABE4F0054F889 /* ViewController.m */; };
+		2242C69C1E5ABE4F0054F889 /* LMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242C69B1E5ABE4F0054F889 /* LMRootViewController.m */; };
 		2242C69F1E5ABE4F0054F889 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2242C69D1E5ABE4F0054F889 /* Main.storyboard */; };
 		2242C6A21E5ABE4F0054F889 /* LMStudyBasicDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2242C6A01E5ABE4F0054F889 /* LMStudyBasicDemo.xcdatamodeld */; };
 		2242C6A41E5ABE4F0054F889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2242C6A31E5ABE4F0054F889 /* Assets.xcassets */; };
@@ -74,22 +72,18 @@
 		22370A191F2F2779005E30D9 /* LMKVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMKVOViewController.m; sourceTree = "<group>"; };
 		22370A1B1F2F2787005E30D9 /* LMKVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMKVCViewController.h; sourceTree = "<group>"; };
 		22370A1C1F2F2787005E30D9 /* LMKVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMKVCViewController.m; sourceTree = "<group>"; };
+		224025E02016D62200104A6A /* LMMethonSwizzlingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMMethonSwizzlingViewController.h; sourceTree = "<group>"; };
+		224025E12016D62200104A6A /* LMMethonSwizzlingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMMethonSwizzlingViewController.m; sourceTree = "<group>"; };
 		2241F13A1E6956370063B144 /* RuntimeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeKit.h; sourceTree = "<group>"; };
 		2241F13B1E6956370063B144 /* RuntimeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeKit.m; sourceTree = "<group>"; };
 		2241F13D1E695D830063B144 /* RuntimeTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeTestClass.h; sourceTree = "<group>"; };
 		2241F13E1E695D830063B144 /* RuntimeTestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeTestClass.m; sourceTree = "<group>"; };
-		2241F1401E6960CC0063B144 /* RuntimeTestClass+AssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RuntimeTestClass+AssociatedObject.h"; sourceTree = "<group>"; };
-		2241F1411E6960CC0063B144 /* RuntimeTestClass+AssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RuntimeTestClass+AssociatedObject.m"; sourceTree = "<group>"; };
-		2241F1431E6962860063B144 /* RuntimeTestClass+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RuntimeTestClass+Category.h"; sourceTree = "<group>"; };
-		2241F1441E6962860063B144 /* RuntimeTestClass+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RuntimeTestClass+Category.m"; sourceTree = "<group>"; };
-		2241F1461E6962BC0063B144 /* RuntimeTestClass+SwapMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RuntimeTestClass+SwapMethod.h"; sourceTree = "<group>"; };
-		2241F1471E6962BC0063B144 /* RuntimeTestClass+SwapMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RuntimeTestClass+SwapMethod.m"; sourceTree = "<group>"; };
 		2242C6911E5ABE4F0054F889 /* LMStudyBasicDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMStudyBasicDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2242C6951E5ABE4F0054F889 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2242C6971E5ABE4F0054F889 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2242C6981E5ABE4F0054F889 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2242C69A1E5ABE4F0054F889 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2242C69B1E5ABE4F0054F889 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2242C69A1E5ABE4F0054F889 /* LMRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMRootViewController.h; sourceTree = "<group>"; };
+		2242C69B1E5ABE4F0054F889 /* LMRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMRootViewController.m; sourceTree = "<group>"; };
 		2242C69E1E5ABE4F0054F889 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2242C6A11E5ABE4F0054F889 /* LMStudyBasicDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LMStudyBasicDemo.xcdatamodel; sourceTree = "<group>"; };
 		2242C6A31E5ABE4F0054F889 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -175,8 +169,8 @@
 				228DC1EB1FA322C0002AA12B /* JS&Native */,
 				2242C6971E5ABE4F0054F889 /* AppDelegate.h */,
 				2242C6981E5ABE4F0054F889 /* AppDelegate.m */,
-				2242C69A1E5ABE4F0054F889 /* ViewController.h */,
-				2242C69B1E5ABE4F0054F889 /* ViewController.m */,
+				2242C69A1E5ABE4F0054F889 /* LMRootViewController.h */,
+				2242C69B1E5ABE4F0054F889 /* LMRootViewController.m */,
 				227297371F43F3FF00B00B74 /* NSObject+LMDescription.h */,
 				227297381F43F3FF00B00B74 /* NSObject+LMDescription.m */,
 				2242C69D1E5ABE4F0054F889 /* Main.storyboard */,
@@ -275,14 +269,10 @@
 				2241F13B1E6956370063B144 /* RuntimeKit.m */,
 				2241F13D1E695D830063B144 /* RuntimeTestClass.h */,
 				2241F13E1E695D830063B144 /* RuntimeTestClass.m */,
-				2241F1401E6960CC0063B144 /* RuntimeTestClass+AssociatedObject.h */,
-				2241F1411E6960CC0063B144 /* RuntimeTestClass+AssociatedObject.m */,
-				2241F1431E6962860063B144 /* RuntimeTestClass+Category.h */,
-				2241F1441E6962860063B144 /* RuntimeTestClass+Category.m */,
-				2241F1461E6962BC0063B144 /* RuntimeTestClass+SwapMethod.h */,
-				2241F1471E6962BC0063B144 /* RuntimeTestClass+SwapMethod.m */,
 				22370A151F2F274E005E30D9 /* LMRumtimeViewController.h */,
 				22370A161F2F274E005E30D9 /* LMRumtimeViewController.m */,
+				224025E02016D62200104A6A /* LMMethonSwizzlingViewController.h */,
+				224025E12016D62200104A6A /* LMMethonSwizzlingViewController.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -457,20 +447,18 @@
 			files = (
 				220FE38D1F7A44930090F1F0 /* UIScrollView+LMRefreshHeaderView.m in Sources */,
 				228DC1E41FA321EC002AA12B /* AnimatedGIFImageSerialization.m in Sources */,
-				2242C69C1E5ABE4F0054F889 /* ViewController.m in Sources */,
+				2242C69C1E5ABE4F0054F889 /* LMRootViewController.m in Sources */,
 				227297391F43F3FF00B00B74 /* NSObject+LMDescription.m in Sources */,
+				224025E22016D62200104A6A /* LMMethonSwizzlingViewController.m in Sources */,
 				22370A141F2F272A005E30D9 /* LMRunloopViewController.m in Sources */,
 				227297361F42956400B00B74 /* LMBasicDeviceInfoObject.m in Sources */,
 				22370A1D1F2F2787005E30D9 /* LMKVCViewController.m in Sources */,
 				2242C6991E5ABE4F0054F889 /* AppDelegate.m in Sources */,
 				22370A171F2F274E005E30D9 /* LMRumtimeViewController.m in Sources */,
-				2241F1421E6960CC0063B144 /* RuntimeTestClass+AssociatedObject.m in Sources */,
 				228DC1F31FA3244D002AA12B /* UIScrollView+CYPullRefresh.m in Sources */,
 				220FE3871F79FC780090F1F0 /* LMRefreshBaseView.m in Sources */,
 				2242C6CC1E5AC0EE0054F889 /* NSObject+KVO.m in Sources */,
 				220FE3901F7A46190090F1F0 /* LMRefreshTestViewController.m in Sources */,
-				2241F1451E6962860063B144 /* RuntimeTestClass+Category.m in Sources */,
-				2241F1481E6962BC0063B144 /* RuntimeTestClass+SwapMethod.m in Sources */,
 				2241F13C1E6956370063B144 /* RuntimeKit.m in Sources */,
 				2242C6A21E5ABE4F0054F889 /* LMStudyBasicDemo.xcdatamodeld in Sources */,
 				225FA7FD1F3DB804001CBF16 /* UIButton+titleImageStyle.m in Sources */,

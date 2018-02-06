@@ -16,7 +16,7 @@
 		22370A171F2F274E005E30D9 /* LMRumtimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22370A161F2F274E005E30D9 /* LMRumtimeViewController.m */; };
 		22370A1A1F2F2779005E30D9 /* LMKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22370A191F2F2779005E30D9 /* LMKVOViewController.m */; };
 		22370A1D1F2F2787005E30D9 /* LMKVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22370A1C1F2F2787005E30D9 /* LMKVCViewController.m */; };
-		224025E22016D62200104A6A /* LMMethonSwizzlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224025E12016D62200104A6A /* LMMethonSwizzlingViewController.m */; };
+		224025E22016D62200104A6A /* LMRuntimeBasicTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224025E12016D62200104A6A /* LMRuntimeBasicTestViewController.m */; };
 		2241F13C1E6956370063B144 /* RuntimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2241F13B1E6956370063B144 /* RuntimeKit.m */; };
 		2241F13F1E695D830063B144 /* RuntimeTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2241F13E1E695D830063B144 /* RuntimeTestClass.m */; };
 		2242C6961E5ABE4F0054F889 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242C6951E5ABE4F0054F889 /* main.m */; };
@@ -72,8 +72,8 @@
 		22370A191F2F2779005E30D9 /* LMKVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMKVOViewController.m; sourceTree = "<group>"; };
 		22370A1B1F2F2787005E30D9 /* LMKVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMKVCViewController.h; sourceTree = "<group>"; };
 		22370A1C1F2F2787005E30D9 /* LMKVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMKVCViewController.m; sourceTree = "<group>"; };
-		224025E02016D62200104A6A /* LMMethonSwizzlingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMMethonSwizzlingViewController.h; sourceTree = "<group>"; };
-		224025E12016D62200104A6A /* LMMethonSwizzlingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMMethonSwizzlingViewController.m; sourceTree = "<group>"; };
+		224025E02016D62200104A6A /* LMRuntimeBasicTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMRuntimeBasicTestViewController.h; sourceTree = "<group>"; };
+		224025E12016D62200104A6A /* LMRuntimeBasicTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMRuntimeBasicTestViewController.m; sourceTree = "<group>"; };
 		2241F13A1E6956370063B144 /* RuntimeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeKit.h; sourceTree = "<group>"; };
 		2241F13B1E6956370063B144 /* RuntimeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeKit.m; sourceTree = "<group>"; };
 		2241F13D1E695D830063B144 /* RuntimeTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeTestClass.h; sourceTree = "<group>"; };
@@ -271,8 +271,8 @@
 				2241F13E1E695D830063B144 /* RuntimeTestClass.m */,
 				22370A151F2F274E005E30D9 /* LMRumtimeViewController.h */,
 				22370A161F2F274E005E30D9 /* LMRumtimeViewController.m */,
-				224025E02016D62200104A6A /* LMMethonSwizzlingViewController.h */,
-				224025E12016D62200104A6A /* LMMethonSwizzlingViewController.m */,
+				224025E02016D62200104A6A /* LMRuntimeBasicTestViewController.h */,
+				224025E12016D62200104A6A /* LMRuntimeBasicTestViewController.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -449,7 +449,7 @@
 				228DC1E41FA321EC002AA12B /* AnimatedGIFImageSerialization.m in Sources */,
 				2242C69C1E5ABE4F0054F889 /* LMRootViewController.m in Sources */,
 				227297391F43F3FF00B00B74 /* NSObject+LMDescription.m in Sources */,
-				224025E22016D62200104A6A /* LMMethonSwizzlingViewController.m in Sources */,
+				224025E22016D62200104A6A /* LMRuntimeBasicTestViewController.m in Sources */,
 				22370A141F2F272A005E30D9 /* LMRunloopViewController.m in Sources */,
 				227297361F42956400B00B74 /* LMBasicDeviceInfoObject.m in Sources */,
 				22370A1D1F2F2787005E30D9 /* LMKVCViewController.m in Sources */,

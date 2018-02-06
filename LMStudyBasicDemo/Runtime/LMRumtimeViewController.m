@@ -7,13 +7,12 @@
 //
 
 #import "LMRumtimeViewController.h"
-#import "LMMethonSwizzlingViewController.h"
+#import "LMRuntimeBasicTestViewController.h"
 #import <objc/runtime.h>
-
 
 @interface LMRumtimeViewController ()
 
-@property (nonatomic, strong) LMMethonSwizzlingViewController *swizzleVC;
+@property (nonatomic, strong) LMRuntimeBasicTestViewController *swizzleVC;
 
 @end
 
@@ -22,13 +21,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    _swizzleVC = [[LMMethonSwizzlingViewController alloc] init];
+
+    _swizzleVC = [[LMRuntimeBasicTestViewController alloc] init];
     [self.view addSubview:_swizzleVC.view];
     _swizzleVC.view.frame = CGRectMake(50, 100, 100, 100);
     _swizzleVC.view.backgroundColor = [UIColor redColor];
     [self addChildViewController:_swizzleVC];
     [_swizzleVC didMoveToParentViewController:self];
+    
 }
 - (void)viewWillAppear:(BOOL)animated
 {

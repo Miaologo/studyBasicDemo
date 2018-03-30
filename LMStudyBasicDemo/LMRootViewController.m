@@ -16,6 +16,9 @@
 #import "LMKVCViewController.h"
 #import "LMKVOViewController.h"
 #import "LMRefreshTestViewController.h"
+#import "LMLockViewController.h"
+#import "LMCoreAnimationMainViewController.h"
+#import "LMThreadViewController.h"
 
 @interface MyObject : NSObject
 @property (nonatomic, strong) NSString *title;
@@ -36,10 +39,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.title = @"titles";
-//    self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.contentArr = @[@"RunLoop", @"Runtime", @"KVO", @"KVC", @"refresh"];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.contentArr = @[@"RunLoop", @"Runtime", @"KVO", @"KVC", @"Refresh", @"Lock", @"CoreAnimation", @"ConcurrencyProgramming"];
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
@@ -67,6 +69,15 @@
     } else if (indexPath.row == 4) {
         LMRefreshTestViewController *testVC = [[LMRefreshTestViewController alloc] init];
         [self.navigationController pushViewController:testVC animated:YES];
+    } else if (indexPath.row == 5) {
+        LMLockViewController *lockVC = [[LMLockViewController alloc] init];
+        [self.navigationController pushViewController:lockVC animated:YES];
+    } else if (indexPath.row == 6) {
+        LMCoreAnimationMainViewController *coreAnimationVC = [[LMCoreAnimationMainViewController alloc] init];
+        [self.navigationController pushViewController:coreAnimationVC animated:YES];
+    } else if (indexPath.row == 7) {
+        LMThreadViewController *threadVC = [[LMThreadViewController alloc] init];
+        [self.navigationController pushViewController:threadVC animated:YES];
     }
 }
 
@@ -74,7 +85,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return self.contentArr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

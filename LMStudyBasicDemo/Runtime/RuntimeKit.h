@@ -10,6 +10,8 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 
+
+
 @interface RuntimeKit : NSObject
 
 /*
@@ -65,6 +67,6 @@
  @param method1 方法1
  @param method2 方法2
  */
-+ (void)methodSwap:(Class)class firstMethod:(SEL)method1 secondMethod:(SEL)method2;
++ (void)methodSwizzling:(Class)class originalMethod:(SEL)method1 swizzledMethod:(SEL)method2;
 
 @end

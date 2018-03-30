@@ -29,12 +29,19 @@
 		2242C6B21E5ABE4F0054F889 /* LMStudyBasicDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242C6B11E5ABE4F0054F889 /* LMStudyBasicDemoTests.m */; };
 		2242C6BD1E5ABE4F0054F889 /* LMStudyBasicDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242C6BC1E5ABE4F0054F889 /* LMStudyBasicDemoUITests.m */; };
 		2242C6CC1E5AC0EE0054F889 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242C6CB1E5AC0EE0054F889 /* NSObject+KVO.m */; };
+		22454E60202D52EB0042A016 /* LMLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22454E5F202D52EB0042A016 /* LMLockViewController.m */; };
+		225DE3EB202AF4C800C42407 /* AspectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 225DE3EA202AF4C800C42407 /* AspectProxy.m */; };
 		225FA7F61F3DA048001CBF16 /* LMTestKVCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 225FA7F51F3DA048001CBF16 /* LMTestKVCObject.m */; };
 		225FA7FD1F3DB804001CBF16 /* UIButton+titleImageStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 225FA7FC1F3DB804001CBF16 /* UIButton+titleImageStyle.m */; };
 		227297361F42956400B00B74 /* LMBasicDeviceInfoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 227297351F42956400B00B74 /* LMBasicDeviceInfoObject.m */; };
 		227297391F43F3FF00B00B74 /* NSObject+LMDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 227297381F43F3FF00B00B74 /* NSObject+LMDescription.m */; };
+		227C8C732048EA3C005899BB /* LMCoreAnimationMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227C8C722048EA3C005899BB /* LMCoreAnimationMainViewController.m */; };
+		227C8C762048EB8F005899BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227C8C752048EB8F005899BB /* QuartzCore.framework */; };
+		227C8C79204CDDAD005899BB /* LMClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 227C8C78204CDDAD005899BB /* LMClockView.m */; };
+		227D7FC7206DE06A0075B5A5 /* LMThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227D7FC6206DE06A0075B5A5 /* LMThreadViewController.m */; };
 		228DC1E41FA321EC002AA12B /* AnimatedGIFImageSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 228DC1E31FA321EC002AA12B /* AnimatedGIFImageSerialization.m */; };
 		228DC1F31FA3244D002AA12B /* UIScrollView+CYPullRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 228DC1F21FA3244D002AA12B /* UIScrollView+CYPullRefresh.m */; };
+		228EAB0D205674C8005D478A /* LMScrollLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 228EAB0C205674C8005D478A /* LMScrollLayerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +104,10 @@
 		2242C6BE1E5ABE4F0054F889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2242C6CA1E5AC0EE0054F889 /* NSObject+KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVO.h"; sourceTree = "<group>"; };
 		2242C6CB1E5AC0EE0054F889 /* NSObject+KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
+		22454E5E202D52EB0042A016 /* LMLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMLockViewController.h; sourceTree = "<group>"; };
+		22454E5F202D52EB0042A016 /* LMLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMLockViewController.m; sourceTree = "<group>"; };
+		225DE3E9202AF4C800C42407 /* AspectProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AspectProxy.h; sourceTree = "<group>"; };
+		225DE3EA202AF4C800C42407 /* AspectProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AspectProxy.m; sourceTree = "<group>"; };
 		225FA7F41F3DA048001CBF16 /* LMTestKVCObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMTestKVCObject.h; sourceTree = "<group>"; };
 		225FA7F51F3DA048001CBF16 /* LMTestKVCObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMTestKVCObject.m; sourceTree = "<group>"; };
 		225FA7FB1F3DB804001CBF16 /* UIButton+titleImageStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+titleImageStyle.h"; sourceTree = "<group>"; };
@@ -105,10 +116,19 @@
 		227297351F42956400B00B74 /* LMBasicDeviceInfoObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMBasicDeviceInfoObject.m; sourceTree = "<group>"; };
 		227297371F43F3FF00B00B74 /* NSObject+LMDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LMDescription.h"; sourceTree = "<group>"; };
 		227297381F43F3FF00B00B74 /* NSObject+LMDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LMDescription.m"; sourceTree = "<group>"; };
+		227C8C712048EA3C005899BB /* LMCoreAnimationMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMCoreAnimationMainViewController.h; sourceTree = "<group>"; };
+		227C8C722048EA3C005899BB /* LMCoreAnimationMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMCoreAnimationMainViewController.m; sourceTree = "<group>"; };
+		227C8C752048EB8F005899BB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		227C8C77204CDDAD005899BB /* LMClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMClockView.h; sourceTree = "<group>"; };
+		227C8C78204CDDAD005899BB /* LMClockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMClockView.m; sourceTree = "<group>"; };
+		227D7FC5206DE06A0075B5A5 /* LMThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMThreadViewController.h; sourceTree = "<group>"; };
+		227D7FC6206DE06A0075B5A5 /* LMThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMThreadViewController.m; sourceTree = "<group>"; };
 		228DC1E21FA321EC002AA12B /* AnimatedGIFImageSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedGIFImageSerialization.h; sourceTree = "<group>"; };
 		228DC1E31FA321EC002AA12B /* AnimatedGIFImageSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedGIFImageSerialization.m; sourceTree = "<group>"; };
 		228DC1F11FA3244D002AA12B /* UIScrollView+CYPullRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CYPullRefresh.h"; sourceTree = "<group>"; };
 		228DC1F21FA3244D002AA12B /* UIScrollView+CYPullRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CYPullRefresh.m"; sourceTree = "<group>"; };
+		228EAB0B205674C8005D478A /* LMScrollLayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMScrollLayerView.h; sourceTree = "<group>"; };
+		228EAB0C205674C8005D478A /* LMScrollLayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMScrollLayerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227C8C762048EB8F005899BB /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +164,7 @@
 				2242C6B01E5ABE4F0054F889 /* LMStudyBasicDemoTests */,
 				2242C6BB1E5ABE4F0054F889 /* LMStudyBasicDemoUITests */,
 				2242C6921E5ABE4F0054F889 /* Products */,
+				227C8C742048EB8E005899BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +181,9 @@
 		2242C6931E5ABE4F0054F889 /* LMStudyBasicDemo */ = {
 			isa = PBXGroup;
 			children = (
+				227D7FC4206DE00C0075B5A5 /* ConcurrencyProgramming */,
+				227C8C702048EA22005899BB /* CoreAnimation */,
+				22454E5D202D52810042A016 /* Lock */,
 				228DC1EA1FA32294002AA12B /* KVO-KVC */,
 				228DC1E91FA3227D002AA12B /* Runtime */,
 				228DC1E81FA32264002AA12B /* RunLoop */,
@@ -208,6 +233,45 @@
 				2242C6BE1E5ABE4F0054F889 /* Info.plist */,
 			);
 			path = LMStudyBasicDemoUITests;
+			sourceTree = "<group>";
+		};
+		22454E5D202D52810042A016 /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				22454E5E202D52EB0042A016 /* LMLockViewController.h */,
+				22454E5F202D52EB0042A016 /* LMLockViewController.m */,
+			);
+			path = Lock;
+			sourceTree = "<group>";
+		};
+		227C8C702048EA22005899BB /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				227C8C712048EA3C005899BB /* LMCoreAnimationMainViewController.h */,
+				227C8C722048EA3C005899BB /* LMCoreAnimationMainViewController.m */,
+				227C8C77204CDDAD005899BB /* LMClockView.h */,
+				227C8C78204CDDAD005899BB /* LMClockView.m */,
+				228EAB0B205674C8005D478A /* LMScrollLayerView.h */,
+				228EAB0C205674C8005D478A /* LMScrollLayerView.m */,
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		227C8C742048EB8E005899BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				227C8C752048EB8F005899BB /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		227D7FC4206DE00C0075B5A5 /* ConcurrencyProgramming */ = {
+			isa = PBXGroup;
+			children = (
+				227D7FC5206DE06A0075B5A5 /* LMThreadViewController.h */,
+				227D7FC6206DE06A0075B5A5 /* LMThreadViewController.m */,
+			);
+			path = ConcurrencyProgramming;
 			sourceTree = "<group>";
 		};
 		228DC1DE1FA32173002AA12B /* GIFImageSerialization */ = {
@@ -271,6 +335,8 @@
 				2241F13E1E695D830063B144 /* RuntimeTestClass.m */,
 				22370A151F2F274E005E30D9 /* LMRumtimeViewController.h */,
 				22370A161F2F274E005E30D9 /* LMRumtimeViewController.m */,
+				225DE3E9202AF4C800C42407 /* AspectProxy.h */,
+				225DE3EA202AF4C800C42407 /* AspectProxy.m */,
 				224025E02016D62200104A6A /* LMRuntimeBasicTestViewController.h */,
 				224025E12016D62200104A6A /* LMRuntimeBasicTestViewController.m */,
 			);
@@ -447,6 +513,7 @@
 			files = (
 				220FE38D1F7A44930090F1F0 /* UIScrollView+LMRefreshHeaderView.m in Sources */,
 				228DC1E41FA321EC002AA12B /* AnimatedGIFImageSerialization.m in Sources */,
+				22454E60202D52EB0042A016 /* LMLockViewController.m in Sources */,
 				2242C69C1E5ABE4F0054F889 /* LMRootViewController.m in Sources */,
 				227297391F43F3FF00B00B74 /* NSObject+LMDescription.m in Sources */,
 				224025E22016D62200104A6A /* LMRuntimeBasicTestViewController.m in Sources */,
@@ -454,6 +521,8 @@
 				227297361F42956400B00B74 /* LMBasicDeviceInfoObject.m in Sources */,
 				22370A1D1F2F2787005E30D9 /* LMKVCViewController.m in Sources */,
 				2242C6991E5ABE4F0054F889 /* AppDelegate.m in Sources */,
+				227C8C79204CDDAD005899BB /* LMClockView.m in Sources */,
+				227D7FC7206DE06A0075B5A5 /* LMThreadViewController.m in Sources */,
 				22370A171F2F274E005E30D9 /* LMRumtimeViewController.m in Sources */,
 				228DC1F31FA3244D002AA12B /* UIScrollView+CYPullRefresh.m in Sources */,
 				220FE3871F79FC780090F1F0 /* LMRefreshBaseView.m in Sources */,
@@ -462,8 +531,11 @@
 				2241F13C1E6956370063B144 /* RuntimeKit.m in Sources */,
 				2242C6A21E5ABE4F0054F889 /* LMStudyBasicDemo.xcdatamodeld in Sources */,
 				225FA7FD1F3DB804001CBF16 /* UIButton+titleImageStyle.m in Sources */,
+				227C8C732048EA3C005899BB /* LMCoreAnimationMainViewController.m in Sources */,
+				228EAB0D205674C8005D478A /* LMScrollLayerView.m in Sources */,
 				22370A1A1F2F2779005E30D9 /* LMKVOViewController.m in Sources */,
 				225FA7F61F3DA048001CBF16 /* LMTestKVCObject.m in Sources */,
+				225DE3EB202AF4C800C42407 /* AspectProxy.m in Sources */,
 				2242C6961E5ABE4F0054F889 /* main.m in Sources */,
 				220FE38A1F7A2D1A0090F1F0 /* MAYRefreshHeaderView.m in Sources */,
 				2241F13F1E695D830063B144 /* RuntimeTestClass.m in Sources */,

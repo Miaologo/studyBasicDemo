@@ -9,6 +9,7 @@
 #import "LMRumtimeViewController.h"
 #import "LMRuntimeBasicTestViewController.h"
 #import <objc/runtime.h>
+#import "AspectProxy.h"
 
 @interface LMRumtimeViewController ()
 
@@ -17,6 +18,31 @@
 @end
 
 @implementation LMRumtimeViewController
+
++ (void)load
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+        SEL originalSel = @selector(viewDidAppear:);
+        SEL swizzledSel = @selector(lm_viewDidAppear:);
+        Method originalMethod = class_getInstanceMethod(class, originalSel);
+        Method swizzledMethod = class_getInstanceMethod(class, swizzledSel);
+        BOOL success = class_addMethod(class, originalSel, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
+        if (success) {
+            class_replaceMethod(class, swizzledSel, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+        } else {
+            method_exchangeImplementations(originalMethod, swizzledMethod);
+        }
+        
+    });
+}
+
+- (void)lm_viewDidAppear:(BOOL)animated
+{
+    [self lm_viewDidAppear:animated];
+    NSLog(@"------ lm_viewDidAppear ---- \n");
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,7 +55,50 @@
     [self addChildViewController:_swizzleVC];
     [_swizzleVC didMoveToParentViewController:self];
     
+//    [self testAspectProxy];
+    
+//    IMP swizzle = method_getImplementation(class_getInstanceMethod([self class], @selector(testAspectProxy)));
+    
+//    [self class_swizzleMethodAndStore:[self class] original:@selector(viewDidAppear:) replacement:swizzle store:nil];
 }
+
+typedef IMP *IMPPointer;
+- (BOOL)class_swizzleMethodAndStore:(Class)class original:(SEL)original replacement:(IMP) replacement store:(IMPPointer)store
+{
+    IMP imp = NULL;
+    Method method = class_getInstanceMethod(class, original);
+    if (method) {
+        const char *type = method_getTypeEncoding(method);
+        imp = class_replaceMethod(class, original, replacement, type);
+        if (!imp) {
+            imp = method_getImplementation(method);
+        }
+    }
+    if (imp && store) {
+        *store = imp;
+    }
+    return imp != NULL;
+}
+
+- (void)testAspectProxy
+{
+    id student = [[TestStudent alloc] init];
+    NSValue *selValue1 = [NSValue valueWithPointer:@selector(study:andRead:)];
+    NSArray *selValues = @[selValue1];
+    AuditingInvoker *invoker = [[AuditingInvoker alloc] init];
+    id studentProxy = [[AspectProxy alloc] initWithObject:student selectors:selValues andInover:invoker];
+    // 使用指定的选择器向该代理发送消息---例子1
+    [studentProxy study:@"Computer" andRead:@"Algorithm"];
+    
+    // 使用还未注册到代理中的其他选择器，向这个代理发送消息！---例子2
+    [studentProxy study:@"mathematics" name:@"higher mathematics"];
+    
+    // 为这个代理注册一个选择器并再次向其发送消息---例子3
+    [studentProxy registerSelector:@selector(study:name:)];
+    [studentProxy study:@"mathematics" name:@"higher mathematics"];
+    
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];

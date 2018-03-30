@@ -68,7 +68,7 @@ void ReportFunction(id self, SEL _cmd) {
     Class newClass = objc_allocateClassPair([NSError class], "RuntimeErrorSubClass", 0);
     class_addMethod(newClass, @selector(report), (IMP)ReportFunction, "v@:");
     objc_registerClassPair(newClass);
-    [newClass performSelector:@selector(report)];
+//    [newClass performSelector:@selector(report)];
 }
 
 - (void)viewWillAppear:(BOOL)animated

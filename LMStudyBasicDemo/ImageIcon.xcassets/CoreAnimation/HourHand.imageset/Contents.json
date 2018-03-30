@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "HourHand.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "img_refreshHeader_redcircle@2x.png",
+      "filename" : "HourHand@2x.png",
       "scale" : "2x"
     },
     {

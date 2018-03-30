@@ -8,7 +8,37 @@
 
 #import "RuntimeKit.h"
 
+typedef IMP *IMPPointer;
+BOOL class_swizzleMethodAndStore(Class class, SEL original, IMP replacement, IMPPointer store)
+{
+    IMP imp = NULL;
+    Method method = class_getInstanceMethod(class, original);
+    if (method) {
+        const char *type = method_getTypeEncoding(method);
+        imp = class_replaceMethod(class, original, replacement, type);
+        if (!imp) {
+            imp = method_getImplementation(method);
+        }
+    }
+    if (imp && store) {
+        *store = imp;
+    }
+    return imp != NULL;
+}
+
 @implementation RuntimeKit
+
+//static void MySetFrame(id self, SEL _cmd, NSRect frame);
+//static void (*SetFrameIMP)(id self, SEL _cmd, NSRect frame);
+//
+//static void MySetFrame(id self, SEL _cmd, NSRect frame) {
+//    // do custom work
+//    SetFrameIMP(self, _cmd, frame);
+//}
+
+//+ (void)load {
+//    [self swizzle:@selector(setFrame:) with:(IMP)MySetFrame store:(IMP *)&SetFrameIMP];
+//}
 
 /**
  获取类名
@@ -63,6 +93,7 @@
     }
     free(propertyList);
     return [mutableList copy];
+    
 }
 
 /**
@@ -125,11 +156,11 @@
  方法交换
  
  // @param class 交换方法所在的类
- // @param method1 方法1
- // @param method2 方法2
+ // @param method 方法1
+ // @param method 方法2
  */
 
-+ (void)methodSwap:(Class)class firstMethod:(SEL)originalSel secondMethod:(SEL)swizzledSel
++ (void)methodSwizzling:(Class)class originalMethod:(SEL)originalSel swizzledMethod:(SEL)swizzledSel
 {
     Method originalMethod = class_getInstanceMethod(class, originalSel);
     Method swizzledMethod = class_getInstanceMethod(class, swizzledSel);
@@ -139,6 +170,10 @@
     } else {
         method_exchangeImplementations(originalMethod, swizzledMethod);
     }
+}
+
++ (BOOL)swizzle:(SEL)originalSel with:(IMP)replacement store:(IMPPointer)store {
+    return class_swizzleMethodAndStore(self, originalSel, replacement, store);
 }
 
 

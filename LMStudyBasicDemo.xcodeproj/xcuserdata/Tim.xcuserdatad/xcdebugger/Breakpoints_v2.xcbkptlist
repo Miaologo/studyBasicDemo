@@ -89,13 +89,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LMStudyBasicDemo/Runtime/LMRumtimeViewController.m"
-            timestampString = "538989932.002571"
+            filePath = "LMStudyBasicDemo/Lock/LMLockViewController.m"
+            timestampString = "544005527.470125"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "-xxx_viewWillAppear:"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
+            landmarkName = "-testDispatchSemaphore"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -105,14 +105,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LMStudyBasicDemo/Runtime/LMRuntimeBasicTestViewController.m"
-            timestampString = "538989953.3999"
+            filePath = "LMStudyBasicDemo/ConcurrencyProgramming/LMThreadViewController.m"
+            timestampString = "544072250.986671"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "7">
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "lmThreadOperate"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

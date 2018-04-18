@@ -10,6 +10,7 @@
 #import "pthread.h"
 
 @interface LMThreadViewController ()
+@property (nonatomic, strong) NSString *target;
 
 @end
 
@@ -18,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    dispatch_queue_t queue = dispatch_queue_create("concurrent", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_apply(100000, queue, ^(size_t i) {
+//        self.target = [NSString stringWithFormat:@"abcdefghijk%zu",i];
+        self.target = @"abcdefghijk%zu";
+    });
     
     pthread_t thread = NULL;
     pthread_create(&thread, NULL, lmThreadOperate, "my_param");

@@ -12,6 +12,7 @@
 		220FE38D1F7A44930090F1F0 /* UIScrollView+LMRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FE38C1F7A44930090F1F0 /* UIScrollView+LMRefreshHeaderView.m */; };
 		220FE3901F7A46190090F1F0 /* LMRefreshTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FE38F1F7A46190090F1F0 /* LMRefreshTestViewController.m */; };
 		220FE3921F7A4A560090F1F0 /* ImageIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220FE3911F7A4A560090F1F0 /* ImageIcon.xcassets */; };
+		222D0F6E20849E5D00D90AD3 /* LMThreadSafeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222D0F6D20849E5D00D90AD3 /* LMThreadSafeTestViewController.m */; };
 		22370A141F2F272A005E30D9 /* LMRunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22370A131F2F272A005E30D9 /* LMRunloopViewController.m */; };
 		22370A171F2F274E005E30D9 /* LMRumtimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22370A161F2F274E005E30D9 /* LMRumtimeViewController.m */; };
 		22370A1A1F2F2779005E30D9 /* LMKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22370A191F2F2779005E30D9 /* LMKVOViewController.m */; };
@@ -71,6 +72,8 @@
 		220FE38E1F7A46190090F1F0 /* LMRefreshTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMRefreshTestViewController.h; sourceTree = "<group>"; };
 		220FE38F1F7A46190090F1F0 /* LMRefreshTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMRefreshTestViewController.m; sourceTree = "<group>"; };
 		220FE3911F7A4A560090F1F0 /* ImageIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageIcon.xcassets; sourceTree = "<group>"; };
+		222D0F6C20849E5D00D90AD3 /* LMThreadSafeTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMThreadSafeTestViewController.h; sourceTree = "<group>"; };
+		222D0F6D20849E5D00D90AD3 /* LMThreadSafeTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMThreadSafeTestViewController.m; sourceTree = "<group>"; };
 		22370A121F2F272A005E30D9 /* LMRunloopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMRunloopViewController.h; sourceTree = "<group>"; };
 		22370A131F2F272A005E30D9 /* LMRunloopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMRunloopViewController.m; sourceTree = "<group>"; };
 		22370A151F2F274E005E30D9 /* LMRumtimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMRumtimeViewController.h; sourceTree = "<group>"; };
@@ -270,6 +273,8 @@
 			children = (
 				227D7FC5206DE06A0075B5A5 /* LMThreadViewController.h */,
 				227D7FC6206DE06A0075B5A5 /* LMThreadViewController.m */,
+				222D0F6C20849E5D00D90AD3 /* LMThreadSafeTestViewController.h */,
+				222D0F6D20849E5D00D90AD3 /* LMThreadSafeTestViewController.m */,
 			);
 			path = ConcurrencyProgramming;
 			sourceTree = "<group>";
@@ -529,6 +534,7 @@
 				2242C6CC1E5AC0EE0054F889 /* NSObject+KVO.m in Sources */,
 				220FE3901F7A46190090F1F0 /* LMRefreshTestViewController.m in Sources */,
 				2241F13C1E6956370063B144 /* RuntimeKit.m in Sources */,
+				222D0F6E20849E5D00D90AD3 /* LMThreadSafeTestViewController.m in Sources */,
 				2242C6A21E5ABE4F0054F889 /* LMStudyBasicDemo.xcdatamodeld in Sources */,
 				225FA7FD1F3DB804001CBF16 /* UIButton+titleImageStyle.m in Sources */,
 				227C8C732048EA3C005899BB /* LMCoreAnimationMainViewController.m in Sources */,

@@ -8,17 +8,28 @@
 
 #import "LMRunloopViewController.h"
 
+@interface TestDealloc : NSObject
+
+@end
+
 @interface LMRunloopViewController ()
+
+@property (nonatomic, strong) TestDealloc *testProperty;
 
 @end
 
 @implementation LMRunloopViewController
 
+- (void)dealloc
+{
+    NSLog(@" --- VC  dealloc ----");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor grayColor];
-    
+    self.testProperty = [[TestDealloc alloc] init];
     
 }
 
@@ -27,14 +38,26 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
+
+@implementation TestDealloc
+
+- (void)dealloc
+{
+    NSLog(@" ---- dealloc ");
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
+
+@end
+
+

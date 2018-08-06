@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220F76A821100F9A0083E219 /* LMAudioRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220F76A421100F9A0083E219 /* LMAudioRecordViewController.m */; };
+		220F76A921100F9A0083E219 /* LMAudioPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220F76A521100F9A0083E219 /* LMAudioPlayViewController.m */; };
+		220F76AA21100F9A0083E219 /* LMAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220F76A621100F9A0083E219 /* LMAudioViewController.m */; };
+		220F76AB21100F9A0083E219 /* LMAudioReplicatorAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220F76A721100F9A0083E219 /* LMAudioReplicatorAnimationView.m */; };
 		220FE3871F79FC780090F1F0 /* LMRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FE3861F79FC780090F1F0 /* LMRefreshBaseView.m */; };
 		220FE38A1F7A2D1A0090F1F0 /* MAYRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FE3891F7A2D1A0090F1F0 /* MAYRefreshHeaderView.m */; };
 		220FE38D1F7A44930090F1F0 /* UIScrollView+LMRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220FE38C1F7A44930090F1F0 /* UIScrollView+LMRefreshHeaderView.m */; };
@@ -65,6 +69,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		220F76A021100F9A0083E219 /* LMAudioPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMAudioPlayViewController.h; sourceTree = "<group>"; };
+		220F76A121100F9A0083E219 /* LMAudioRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMAudioRecordViewController.h; sourceTree = "<group>"; };
+		220F76A221100F9A0083E219 /* LMAudioReplicatorAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMAudioReplicatorAnimationView.h; sourceTree = "<group>"; };
+		220F76A321100F9A0083E219 /* LMAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMAudioViewController.h; sourceTree = "<group>"; };
+		220F76A421100F9A0083E219 /* LMAudioRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMAudioRecordViewController.m; sourceTree = "<group>"; };
+		220F76A521100F9A0083E219 /* LMAudioPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMAudioPlayViewController.m; sourceTree = "<group>"; };
+		220F76A621100F9A0083E219 /* LMAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMAudioViewController.m; sourceTree = "<group>"; };
+		220F76A721100F9A0083E219 /* LMAudioReplicatorAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMAudioReplicatorAnimationView.m; sourceTree = "<group>"; };
 		220FE3851F79FC780090F1F0 /* LMRefreshBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMRefreshBaseView.h; sourceTree = "<group>"; };
 		220FE3861F79FC780090F1F0 /* LMRefreshBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMRefreshBaseView.m; sourceTree = "<group>"; };
 		220FE3881F7A2D1A0090F1F0 /* MAYRefreshHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAYRefreshHeaderView.h; sourceTree = "<group>"; };
@@ -166,6 +178,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		220F769F21100F9A0083E219 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				220F76A021100F9A0083E219 /* LMAudioPlayViewController.h */,
+				220F76A521100F9A0083E219 /* LMAudioPlayViewController.m */,
+				220F76A121100F9A0083E219 /* LMAudioRecordViewController.h */,
+				220F76A421100F9A0083E219 /* LMAudioRecordViewController.m */,
+				220F76A221100F9A0083E219 /* LMAudioReplicatorAnimationView.h */,
+				220F76A721100F9A0083E219 /* LMAudioReplicatorAnimationView.m */,
+				220F76A321100F9A0083E219 /* LMAudioViewController.h */,
+				220F76A621100F9A0083E219 /* LMAudioViewController.m */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		2242C6881E5ABE4F0054F889 = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +217,7 @@
 		2242C6931E5ABE4F0054F889 /* LMStudyBasicDemo */ = {
 			isa = PBXGroup;
 			children = (
+				220F769F21100F9A0083E219 /* Audio */,
 				22DFF89820CFB1BF00C013A8 /* Crash */,
 				22ADDEC7209065F100EF9E51 /* instruments */,
 				227D7FC4206DE00C0075B5A5 /* ConcurrencyProgramming */,
@@ -543,6 +571,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				220FE38D1F7A44930090F1F0 /* UIScrollView+LMRefreshHeaderView.m in Sources */,
+				220F76A821100F9A0083E219 /* LMAudioRecordViewController.m in Sources */,
+				220F76AA21100F9A0083E219 /* LMAudioViewController.m in Sources */,
 				228DC1E41FA321EC002AA12B /* AnimatedGIFImageSerialization.m in Sources */,
 				22ADDECA2090663000EF9E51 /* MAYCustomMainThreadWatcher.m in Sources */,
 				22454E60202D52EB0042A016 /* LMLockViewController.m in Sources */,
@@ -570,9 +600,11 @@
 				225FA7F61F3DA048001CBF16 /* LMTestKVCObject.m in Sources */,
 				225DE3EB202AF4C800C42407 /* AspectProxy.m in Sources */,
 				2242C6961E5ABE4F0054F889 /* main.m in Sources */,
+				220F76AB21100F9A0083E219 /* LMAudioReplicatorAnimationView.m in Sources */,
 				220FE38A1F7A2D1A0090F1F0 /* MAYRefreshHeaderView.m in Sources */,
 				2241F13F1E695D830063B144 /* RuntimeTestClass.m in Sources */,
 				22DFF89B20CFB23400C013A8 /* NSObject+AddNotifyEvent.m in Sources */,
+				220F76A921100F9A0083E219 /* LMAudioPlayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

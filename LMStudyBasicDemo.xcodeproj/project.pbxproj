@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220B68072248C1A400895C30 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220B68062248C1A400895C30 /* OpenGLES.framework */; };
+		220B68092248C1B200895C30 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220B68082248C1B200895C30 /* GLKit.framework */; };
+		220B7366223758A800F95601 /* LMOpenGLStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220B7365223758A800F95601 /* LMOpenGLStudyViewController.m */; };
 		220F76A821100F9A0083E219 /* LMAudioRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220F76A421100F9A0083E219 /* LMAudioRecordViewController.m */; };
 		220F76A921100F9A0083E219 /* LMAudioPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220F76A521100F9A0083E219 /* LMAudioPlayViewController.m */; };
 		220F76AA21100F9A0083E219 /* LMAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220F76A621100F9A0083E219 /* LMAudioViewController.m */; };
@@ -35,6 +38,7 @@
 		2242C6BD1E5ABE4F0054F889 /* LMStudyBasicDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242C6BC1E5ABE4F0054F889 /* LMStudyBasicDemoUITests.m */; };
 		2242C6CC1E5AC0EE0054F889 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242C6CB1E5AC0EE0054F889 /* NSObject+KVO.m */; };
 		22454E60202D52EB0042A016 /* LMLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22454E5F202D52EB0042A016 /* LMLockViewController.m */; };
+		2247102921D7796F00027A4F /* LMBasicSensorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2247102821D7796F00027A4F /* LMBasicSensorViewController.m */; };
 		225DE3EB202AF4C800C42407 /* AspectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 225DE3EA202AF4C800C42407 /* AspectProxy.m */; };
 		225FA7F61F3DA048001CBF16 /* LMTestKVCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 225FA7F51F3DA048001CBF16 /* LMTestKVCObject.m */; };
 		225FA7FD1F3DB804001CBF16 /* UIButton+titleImageStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 225FA7FC1F3DB804001CBF16 /* UIButton+titleImageStyle.m */; };
@@ -46,9 +50,11 @@
 		227D7FC7206DE06A0075B5A5 /* LMThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227D7FC6206DE06A0075B5A5 /* LMThreadViewController.m */; };
 		228DC1E41FA321EC002AA12B /* AnimatedGIFImageSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 228DC1E31FA321EC002AA12B /* AnimatedGIFImageSerialization.m */; };
 		228DC1F31FA3244D002AA12B /* UIScrollView+CYPullRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 228DC1F21FA3244D002AA12B /* UIScrollView+CYPullRefresh.m */; };
+		228DE90821F02AB70075B84E /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228DE90721F02AB70075B84E /* Network.framework */; };
 		228EAB0D205674C8005D478A /* LMScrollLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 228EAB0C205674C8005D478A /* LMScrollLayerView.m */; };
 		22ADDECA2090663000EF9E51 /* MAYCustomMainThreadWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ADDEC92090663000EF9E51 /* MAYCustomMainThreadWatcher.m */; };
 		22DFF89B20CFB23400C013A8 /* NSObject+AddNotifyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DFF89A20CFB23400C013A8 /* NSObject+AddNotifyEvent.m */; };
+		AF28DA60228C3AA400FAF19B /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF28DA5F228C3AA400FAF19B /* sample.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +75,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		220B68062248C1A400895C30 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		220B68082248C1B200895C30 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		220B7364223758A800F95601 /* LMOpenGLStudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMOpenGLStudyViewController.h; sourceTree = "<group>"; };
+		220B7365223758A800F95601 /* LMOpenGLStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMOpenGLStudyViewController.m; sourceTree = "<group>"; };
 		220F76A021100F9A0083E219 /* LMAudioPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMAudioPlayViewController.h; sourceTree = "<group>"; };
 		220F76A121100F9A0083E219 /* LMAudioRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMAudioRecordViewController.h; sourceTree = "<group>"; };
 		220F76A221100F9A0083E219 /* LMAudioReplicatorAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMAudioReplicatorAnimationView.h; sourceTree = "<group>"; };
@@ -123,6 +133,8 @@
 		2242C6CB1E5AC0EE0054F889 /* NSObject+KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
 		22454E5E202D52EB0042A016 /* LMLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMLockViewController.h; sourceTree = "<group>"; };
 		22454E5F202D52EB0042A016 /* LMLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMLockViewController.m; sourceTree = "<group>"; };
+		2247102721D7796F00027A4F /* LMBasicSensorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMBasicSensorViewController.h; sourceTree = "<group>"; };
+		2247102821D7796F00027A4F /* LMBasicSensorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMBasicSensorViewController.m; sourceTree = "<group>"; };
 		225DE3E9202AF4C800C42407 /* AspectProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AspectProxy.h; sourceTree = "<group>"; };
 		225DE3EA202AF4C800C42407 /* AspectProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AspectProxy.m; sourceTree = "<group>"; };
 		225FA7F41F3DA048001CBF16 /* LMTestKVCObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMTestKVCObject.h; sourceTree = "<group>"; };
@@ -144,12 +156,14 @@
 		228DC1E31FA321EC002AA12B /* AnimatedGIFImageSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedGIFImageSerialization.m; sourceTree = "<group>"; };
 		228DC1F11FA3244D002AA12B /* UIScrollView+CYPullRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CYPullRefresh.h"; sourceTree = "<group>"; };
 		228DC1F21FA3244D002AA12B /* UIScrollView+CYPullRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CYPullRefresh.m"; sourceTree = "<group>"; };
+		228DE90721F02AB70075B84E /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
 		228EAB0B205674C8005D478A /* LMScrollLayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMScrollLayerView.h; sourceTree = "<group>"; };
 		228EAB0C205674C8005D478A /* LMScrollLayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMScrollLayerView.m; sourceTree = "<group>"; };
 		22ADDEC82090663000EF9E51 /* MAYCustomMainThreadWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAYCustomMainThreadWatcher.h; sourceTree = "<group>"; };
 		22ADDEC92090663000EF9E51 /* MAYCustomMainThreadWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAYCustomMainThreadWatcher.m; sourceTree = "<group>"; };
 		22DFF89920CFB23400C013A8 /* NSObject+AddNotifyEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+AddNotifyEvent.h"; sourceTree = "<group>"; };
 		22DFF89A20CFB23400C013A8 /* NSObject+AddNotifyEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AddNotifyEvent.m"; sourceTree = "<group>"; };
+		AF28DA5F228C3AA400FAF19B /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +171,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220B68092248C1B200895C30 /* GLKit.framework in Frameworks */,
+				220B68072248C1A400895C30 /* OpenGLES.framework in Frameworks */,
+				228DE90821F02AB70075B84E /* Network.framework in Frameworks */,
 				227C8C762048EB8F005899BB /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +195,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		220B73632237580C00F95601 /* openGL */ = {
+			isa = PBXGroup;
+			children = (
+				AF28DA5F228C3AA400FAF19B /* sample.jpg */,
+				220B7364223758A800F95601 /* LMOpenGLStudyViewController.h */,
+				220B7365223758A800F95601 /* LMOpenGLStudyViewController.m */,
+			);
+			path = openGL;
+			sourceTree = "<group>";
+		};
 		220F769F21100F9A0083E219 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +218,13 @@
 				220F76A621100F9A0083E219 /* LMAudioViewController.m */,
 			);
 			path = Audio;
+			sourceTree = "<group>";
+		};
+		223E436521A6C0DE006501DB /* RedPacketRain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RedPacketRain;
 			sourceTree = "<group>";
 		};
 		2242C6881E5ABE4F0054F889 = {
@@ -217,6 +251,8 @@
 		2242C6931E5ABE4F0054F889 /* LMStudyBasicDemo */ = {
 			isa = PBXGroup;
 			children = (
+				220B73632237580C00F95601 /* openGL */,
+				2247102621D7789F00027A4F /* basicSensor */,
 				220F769F21100F9A0083E219 /* Audio */,
 				22DFF89820CFB1BF00C013A8 /* Crash */,
 				22ADDEC7209065F100EF9E51 /* instruments */,
@@ -230,6 +266,7 @@
 				228DC1E61FA32229002AA12B /* BasicDeviceInfo */,
 				228DC1E51FA321EF002AA12B /* RefreshView */,
 				228DC1DE1FA32173002AA12B /* GIFImageSerialization */,
+				223E436521A6C0DE006501DB /* RedPacketRain */,
 				228DC1EB1FA322C0002AA12B /* JS&Native */,
 				2242C6971E5ABE4F0054F889 /* AppDelegate.h */,
 				2242C6981E5ABE4F0054F889 /* AppDelegate.m */,
@@ -283,6 +320,15 @@
 			path = Lock;
 			sourceTree = "<group>";
 		};
+		2247102621D7789F00027A4F /* basicSensor */ = {
+			isa = PBXGroup;
+			children = (
+				2247102721D7796F00027A4F /* LMBasicSensorViewController.h */,
+				2247102821D7796F00027A4F /* LMBasicSensorViewController.m */,
+			);
+			path = basicSensor;
+			sourceTree = "<group>";
+		};
 		227C8C702048EA22005899BB /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +345,9 @@
 		227C8C742048EB8E005899BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				220B68082248C1B200895C30 /* GLKit.framework */,
+				220B68062248C1A400895C30 /* OpenGLES.framework */,
+				228DE90721F02AB70075B84E /* Network.framework */,
 				227C8C752048EB8F005899BB /* QuartzCore.framework */,
 			);
 			name = Frameworks;
@@ -361,8 +410,8 @@
 		228DC1E81FA32264002AA12B /* RunLoop */ = {
 			isa = PBXGroup;
 			children = (
-				22370A131F2F272A005E30D9 /* LMRunloopViewController.m */,
 				22370A121F2F272A005E30D9 /* LMRunloopViewController.h */,
+				22370A131F2F272A005E30D9 /* LMRunloopViewController.m */,
 			);
 			path = RunLoop;
 			sourceTree = "<group>";
@@ -500,7 +549,7 @@
 				TargetAttributes = {
 					2242C6901E5ABE4F0054F889 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = B2HJPX5DWF;
+						DevelopmentTeam = TD4LPUP5HW;
 						ProvisioningStyle = Automatic;
 					};
 					2242C6AC1E5ABE4F0054F889 = {
@@ -522,6 +571,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -546,6 +596,7 @@
 				2242C6A41E5ABE4F0054F889 /* Assets.xcassets in Resources */,
 				220FE3921F7A4A560090F1F0 /* ImageIcon.xcassets in Resources */,
 				2242C69F1E5ABE4F0054F889 /* Main.storyboard in Resources */,
+				AF28DA60228C3AA400FAF19B /* sample.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +629,7 @@
 				22454E60202D52EB0042A016 /* LMLockViewController.m in Sources */,
 				2242C69C1E5ABE4F0054F889 /* LMRootViewController.m in Sources */,
 				227297391F43F3FF00B00B74 /* NSObject+LMDescription.m in Sources */,
+				2247102921D7796F00027A4F /* LMBasicSensorViewController.m in Sources */,
 				224025E22016D62200104A6A /* LMRuntimeBasicTestViewController.m in Sources */,
 				22370A141F2F272A005E30D9 /* LMRunloopViewController.m in Sources */,
 				227297361F42956400B00B74 /* LMBasicDeviceInfoObject.m in Sources */,
@@ -603,6 +655,7 @@
 				220F76AB21100F9A0083E219 /* LMAudioReplicatorAnimationView.m in Sources */,
 				220FE38A1F7A2D1A0090F1F0 /* MAYRefreshHeaderView.m in Sources */,
 				2241F13F1E695D830063B144 /* RuntimeTestClass.m in Sources */,
+				220B7366223758A800F95601 /* LMOpenGLStudyViewController.m in Sources */,
 				22DFF89B20CFB23400C013A8 /* NSObject+AddNotifyEvent.m in Sources */,
 				220F76A921100F9A0083E219 /* LMAudioPlayViewController.m in Sources */,
 			);
@@ -753,7 +806,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = B2HJPX5DWF;
+				DEVELOPMENT_TEAM = TD4LPUP5HW;
 				INFOPLIST_FILE = LMStudyBasicDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = studyDemo.com.LMStudyBasicDemo;
@@ -765,7 +818,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = B2HJPX5DWF;
+				DEVELOPMENT_TEAM = TD4LPUP5HW;
 				INFOPLIST_FILE = LMStudyBasicDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = studyDemo.com.LMStudyBasicDemo;

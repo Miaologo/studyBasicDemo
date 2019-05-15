@@ -11,8 +11,8 @@
 #define LMMainThreadWatcher_Watch_Interval 1.0f
 #define LMMainThreadWatcher_Watching_Level (16.0f/1000.0f)
 
-#define Notification_LMMainThreadWatcher_Worker_Ping @"LMMainThreadWatcher_"
-#define Notification_LMMainThreadWatcher_Main_Pong @""
+#define Notification_LMMainThreadWatcher_Worker_Ping @"LMMainThreadWatcher_Worker_ping"
+#define Notification_LMMainThreadWatcher_Main_Pong @"LMMainThreadWatcher_Main_Pong"
 
 #include <signal.h>
 #include <pthread.h>

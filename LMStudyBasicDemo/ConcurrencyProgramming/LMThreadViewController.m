@@ -27,6 +27,12 @@
     
     pthread_t thread = NULL;
     pthread_create(&thread, NULL, lmThreadOperate, "my_param");
+    
+    NSTimer *heartBeatTimer = [NSTimer timerWithTimeInterval:3 repeats:NO block:^(NSTimer * _Nonnull timer) {
+        
+    }];
+    NSTimer *temp;
+    [[NSRunLoop mainRunLoop] addTimer:temp forMode:NSDefaultRunLoopMode];
 }
 
 void *lmThreadOperate(void *param){

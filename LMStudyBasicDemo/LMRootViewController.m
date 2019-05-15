@@ -20,6 +20,7 @@
 #import "LMCoreAnimationMainViewController.h"
 #import "LMThreadViewController.h"
 #import "LMAudioViewController.h"
+#import "LMOpenGLStudyViewController.h"
 
 @interface MyObject : NSObject
 @property (nonatomic, strong) NSString *title;
@@ -42,7 +43,7 @@
     [super viewDidLoad];
     self.navigationItem.title = @"titles";
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.contentArr = @[@"RunLoop", @"Runtime", @"KVO", @"KVC", @"Refresh", @"Lock", @"CoreAnimation", @"ConcurrencyProgramming", @"AudioRecord"];
+    self.contentArr = @[@"RunLoop", @"Runtime", @"KVO", @"KVC", @"Refresh", @"Lock", @"CoreAnimation", @"ConcurrencyProgramming", @"AudioRecord", @"openGLES"];
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
@@ -82,6 +83,9 @@
     } else if(indexPath.row == 8) {
         LMAudioViewController *audioVC = [[LMAudioViewController alloc] init];
         [self.navigationController pushViewController:audioVC animated:YES];
+    } else if (indexPath.row == 9) {
+        LMOpenGLStudyViewController *opengles = [[LMOpenGLStudyViewController alloc] init];
+        [self.navigationController pushViewController:opengles animated:YES];
     }
 }
 

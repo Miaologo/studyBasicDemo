@@ -39,6 +39,11 @@
 
 @implementation LMAudioViewController
 
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (void)LMNSLogStyle:(NSString *)text
 {
     NSLog(@"\n --------- %@ ------- \n", text);
@@ -65,13 +70,15 @@
     self.recordButton.layer.borderColor = [UIColor redColor].CGColor;
     self.recordButton.layer.borderWidth = 0.5;
     [self.recordContainerView addSubview:self.recordButton];
+    UITapGestureRecognizer *panGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
+    [self.recordContainerView addGestureRecognizer:panGesture];
     
     
 //    //添加点击事件
 //    //开始监听用户的语音
 //    [self.recordButton addTarget:self action:@selector(startRecord) forControlEvents:UIControlEventTouchDown];
 //    //开始停止监听 并处理用户的输入
-//    [self.recordButton addTarget:self action:@selector(stopRecord) forControlEvents:UIControlEventTouchUpInside];
+    [self.recordButton addTarget:self action:@selector(stopRecord) forControlEvents:UIControlEventTouchUpInside];
 //    //取消这一次的监听
 //    [self.recordButton addTarget:self action:@selector(cancelSpeak) forControlEvents:UIControlEventTouchUpOutside|UIControlEventTouchCancel];
 //    [self.recordButton addTarget:self action:@selector(remindCancel) forControlEvents:UIControlEventTouchCancel];
@@ -87,15 +94,31 @@
 //        [self LMNSLogStyle:[@(CACurrentMediaTime()) stringValue]];
 //    }];
     
-    self.voiceInputImage = [[KSLiveVoiceInputButton alloc] initWithFrame:CGRectMake(50, 650, 40, 40)];
-    self.voiceInputImage.userInteractionEnabled = YES;
-    self.voiceInputImage.layer.borderColor = [UIColor redColor].CGColor;
-    self.voiceInputImage.layer.borderWidth = 0.5;
-    self.voiceInputImage.image = [UIImage imageNamed:@"live_icon_voice_l_normal"];
-    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
-    [self.voiceInputImage addGestureRecognizer:panGesture];
-    [self.view addSubview:self.voiceInputImage];
+//    self.voiceInputImage = [[KSLiveVoiceInputButton alloc] initWithFrame:CGRectMake(50, 650, 40, 40)];
+//    self.voiceInputImage.userInteractionEnabled = YES;
+//    self.voiceInputImage.layer.borderColor = [UIColor redColor].CGColor;
+//    self.voiceInputImage.layer.borderWidth = 0.5;
+//    self.voiceInputImage.image = [UIImage imageNamed:@"live_icon_voice_l_normal"];
+//    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
+//    [self.voiceInputImage addGestureRecognizer:panGesture];
+//    [self.view addSubview:self.voiceInputImage];
+//    [self addAudioOutObserver:NO];
 
+}
+
+- (void)handleTapGesture:(UITapGestureRecognizer *)gesture
+{
+    [self LMNSLogStyle:@"handleTapGesture"];
+
+}
+
+- (void)addAudioOutObserver:(BOOL)addOrRemove
+{
+    if (addOrRemove) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(anchorAudioRouteChange:) name:AVAudioSessionRouteChangeNotification object:nil];
+    } else {
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:AVAudioSessionRouteChangeNotification object:nil];
+    }
 }
 
 - (void)handleGesture:(UIPanGestureRecognizer *)panGesture

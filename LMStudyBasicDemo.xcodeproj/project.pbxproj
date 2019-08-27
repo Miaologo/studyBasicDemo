@@ -54,9 +54,12 @@
 		228EAB0D205674C8005D478A /* LMScrollLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 228EAB0C205674C8005D478A /* LMScrollLayerView.m */; };
 		22ADDECA2090663000EF9E51 /* MAYCustomMainThreadWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ADDEC92090663000EF9E51 /* MAYCustomMainThreadWatcher.m */; };
 		22DFF89B20CFB23400C013A8 /* NSObject+AddNotifyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DFF89A20CFB23400C013A8 /* NSObject+AddNotifyEvent.m */; };
+		AF21D47522D442C800083830 /* LMCrashMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF21D47422D442C800083830 /* LMCrashMainViewController.m */; };
+		AF2782FD22E6FF4E00288E23 /* LMBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2782FC22E6FF4E00288E23 /* LMBacktraceLogger.m */; };
 		AF28DA60228C3AA400FAF19B /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF28DA5F228C3AA400FAF19B /* sample.jpg */; };
 		AF28DA62228D39AF00FAF19B /* glsl.vsh in Resources */ = {isa = PBXBuildFile; fileRef = AF28DA61228D39AF00FAF19B /* glsl.vsh */; };
 		AF28DA64228D3A3F00FAF19B /* glsl.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AF28DA63228D3A3F00FAF19B /* glsl.fsh */; };
+		AFAC559E22952E580088B202 /* LMFrequenceWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAC559D22952E580088B202 /* LMFrequenceWaveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,9 +168,15 @@
 		22ADDEC92090663000EF9E51 /* MAYCustomMainThreadWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAYCustomMainThreadWatcher.m; sourceTree = "<group>"; };
 		22DFF89920CFB23400C013A8 /* NSObject+AddNotifyEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+AddNotifyEvent.h"; sourceTree = "<group>"; };
 		22DFF89A20CFB23400C013A8 /* NSObject+AddNotifyEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AddNotifyEvent.m"; sourceTree = "<group>"; };
+		AF21D47322D442C800083830 /* LMCrashMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMCrashMainViewController.h; sourceTree = "<group>"; };
+		AF21D47422D442C800083830 /* LMCrashMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMCrashMainViewController.m; sourceTree = "<group>"; };
+		AF2782FB22E6FF4E00288E23 /* LMBacktraceLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMBacktraceLogger.h; sourceTree = "<group>"; };
+		AF2782FC22E6FF4E00288E23 /* LMBacktraceLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMBacktraceLogger.m; sourceTree = "<group>"; };
 		AF28DA5F228C3AA400FAF19B /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample.jpg; sourceTree = "<group>"; };
 		AF28DA61228D39AF00FAF19B /* glsl.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = glsl.vsh; sourceTree = "<group>"; };
 		AF28DA63228D3A3F00FAF19B /* glsl.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = glsl.fsh; sourceTree = "<group>"; };
+		AFAC559C22952E580088B202 /* LMFrequenceWaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMFrequenceWaveViewController.h; sourceTree = "<group>"; };
+		AFAC559D22952E580088B202 /* LMFrequenceWaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMFrequenceWaveViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +223,7 @@
 		220F769F21100F9A0083E219 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				AFAC559B22952E000088B202 /* audioFrequenceWave */,
 				220F76A021100F9A0083E219 /* LMAudioPlayViewController.h */,
 				220F76A521100F9A0083E219 /* LMAudioPlayViewController.m */,
 				220F76A121100F9A0083E219 /* LMAudioRecordViewController.h */,
@@ -475,6 +485,8 @@
 			children = (
 				22ADDEC82090663000EF9E51 /* MAYCustomMainThreadWatcher.h */,
 				22ADDEC92090663000EF9E51 /* MAYCustomMainThreadWatcher.m */,
+				AF2782FB22E6FF4E00288E23 /* LMBacktraceLogger.h */,
+				AF2782FC22E6FF4E00288E23 /* LMBacktraceLogger.m */,
 			);
 			path = instruments;
 			sourceTree = "<group>";
@@ -484,8 +496,19 @@
 			children = (
 				22DFF89920CFB23400C013A8 /* NSObject+AddNotifyEvent.h */,
 				22DFF89A20CFB23400C013A8 /* NSObject+AddNotifyEvent.m */,
+				AF21D47322D442C800083830 /* LMCrashMainViewController.h */,
+				AF21D47422D442C800083830 /* LMCrashMainViewController.m */,
 			);
 			path = Crash;
+			sourceTree = "<group>";
+		};
+		AFAC559B22952E000088B202 /* audioFrequenceWave */ = {
+			isa = PBXGroup;
+			children = (
+				AFAC559C22952E580088B202 /* LMFrequenceWaveViewController.h */,
+				AFAC559D22952E580088B202 /* LMFrequenceWaveViewController.m */,
+			);
+			path = audioFrequenceWave;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -636,6 +659,7 @@
 				22ADDECA2090663000EF9E51 /* MAYCustomMainThreadWatcher.m in Sources */,
 				22454E60202D52EB0042A016 /* LMLockViewController.m in Sources */,
 				2242C69C1E5ABE4F0054F889 /* LMRootViewController.m in Sources */,
+				AFAC559E22952E580088B202 /* LMFrequenceWaveViewController.m in Sources */,
 				227297391F43F3FF00B00B74 /* NSObject+LMDescription.m in Sources */,
 				2247102921D7796F00027A4F /* LMBasicSensorViewController.m in Sources */,
 				224025E22016D62200104A6A /* LMRuntimeBasicTestViewController.m in Sources */,
@@ -644,12 +668,14 @@
 				22370A1D1F2F2787005E30D9 /* LMKVCViewController.m in Sources */,
 				2242C6991E5ABE4F0054F889 /* AppDelegate.m in Sources */,
 				227C8C79204CDDAD005899BB /* LMClockView.m in Sources */,
+				AF21D47522D442C800083830 /* LMCrashMainViewController.m in Sources */,
 				227D7FC7206DE06A0075B5A5 /* LMThreadViewController.m in Sources */,
 				22370A171F2F274E005E30D9 /* LMRumtimeViewController.m in Sources */,
 				228DC1F31FA3244D002AA12B /* UIScrollView+CYPullRefresh.m in Sources */,
 				220FE3871F79FC780090F1F0 /* LMRefreshBaseView.m in Sources */,
 				2242C6CC1E5AC0EE0054F889 /* NSObject+KVO.m in Sources */,
 				220FE3901F7A46190090F1F0 /* LMRefreshTestViewController.m in Sources */,
+				AF2782FD22E6FF4E00288E23 /* LMBacktraceLogger.m in Sources */,
 				2241F13C1E6956370063B144 /* RuntimeKit.m in Sources */,
 				222D0F6E20849E5D00D90AD3 /* LMThreadSafeTestViewController.m in Sources */,
 				2242C6A21E5ABE4F0054F889 /* LMStudyBasicDemo.xcdatamodeld in Sources */,

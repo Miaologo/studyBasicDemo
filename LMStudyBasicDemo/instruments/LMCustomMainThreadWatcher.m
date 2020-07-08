@@ -1,12 +1,12 @@
 //
-//  MAYCustomMetricsInterceptor.m
+//  LMCustomMetricsInterceptor.m
 //  MeituanMovie
 //
 //  Created by LiuMiao on 2018/3/23.
 //  Copyright © 2018年 sankuai. All rights reserved.
 //
 
-#import "MAYCustomMainThreadWatcher.h"
+#import "LMCustomMainThreadWatcher.h"
 
 #define LMMainThreadWatcher_Watch_Interval 1.0f
 #define LMMainThreadWatcher_Watching_Level (16.0f/1000.0f)
@@ -37,6 +37,9 @@ static void thread_signal_handler(int sig) {
             NSLog(@"%@\n", call);
         }
     }
+    dispatch_async(dispatch_get_main_queue(), ^{
+       NSLog(@"Trace = %@", callStack);
+    });
     return;
 }
 
@@ -45,7 +48,7 @@ static void install_signal_handle()
     signal(CALLSTACK_SIG, thread_signal_handler);
 }
 
-static void prinMainThreadCallStack()
+static void printMainThreadCallStack()
 {
     NSLog(@"sending signal: %d to main thread", CALLSTACK_SIG);
     pthread_kill(mainThreadID, CALLSTACK_SIG);
@@ -91,6 +94,15 @@ dispatch_source_t creatGCDTimer(uint64_t interval, uint64_t leeway, dispatch_que
         [self pingMainThread];
     });
 }
+
+- (void)stopWatch
+{
+    if (self.pingTimer) {
+        dispatch_suspend(self.pingTimer);
+        self.pingTimer = nil;
+    }
+}
+
 - (void)pingMainThread
 {
     uint64_t interval = LMMainThreadWatcher_Watch_Interval * NSEC_PER_SEC;
@@ -110,7 +122,7 @@ dispatch_source_t creatGCDTimer(uint64_t interval, uint64_t leeway, dispatch_que
 - (void)onPongTimeout
 {
     [self canclePongTimer];
-    prinMainThreadCallStack();
+    printMainThreadCallStack();
     
 }
 

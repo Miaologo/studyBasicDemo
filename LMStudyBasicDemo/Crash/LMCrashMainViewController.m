@@ -18,8 +18,8 @@
 //int ret = task_set_exception_ports(mach_task_self(), EXC_MASK_BAD_ACCESS, MACH_PORT_NULL, EXCEPTION_DEFAULT, 0);
 
 void sig_handle(int sig, siginfo_t *info, ucontext_t *ucontext) {
-    NSLog(@"signal caught 0: %d, pc 0x%llx\n", sig, ucontext->uc_mcontext->__ss.__pc);
-    ucontext->uc_mcontext->__ss.__pc = ucontext->uc_mcontext->__ss.__lr;
+//    NSLog(@"signal caught 0: %d, pc 0x%llx\n", sig, ucontext->uc_mcontext->__ss.__pc);
+//    ucontext->uc_mcontext->__ss.__pc = ucontext->uc_mcontext->__ss.__lr;
     
 }
 

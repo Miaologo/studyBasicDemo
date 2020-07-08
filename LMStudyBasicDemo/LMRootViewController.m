@@ -21,6 +21,7 @@
 #import "LMThreadViewController.h"
 #import "LMAudioViewController.h"
 #import "LMOpenGLStudyViewController.h"
+#import "ARSCNViewViewController.h"
 
 @interface MyObject : NSObject
 @property (nonatomic, strong) NSString *title;
@@ -43,7 +44,7 @@
     [super viewDidLoad];
     self.navigationItem.title = @"titles";
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.contentArr = @[@"RunLoop", @"Runtime", @"KVO", @"KVC", @"Refresh", @"Lock", @"CoreAnimation", @"ConcurrencyProgramming", @"AudioRecord", @"openGLES"];
+    self.contentArr = @[@"RunLoop", @"Runtime", @"KVO", @"KVC", @"Refresh", @"Lock", @"CoreAnimation", @"ConcurrencyProgramming", @"AudioRecord", @"openGLES", @"photo", @"ARKit"];
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
@@ -86,6 +87,11 @@
     } else if (indexPath.row == 9) {
         LMOpenGLStudyViewController *opengles = [[LMOpenGLStudyViewController alloc] init];
         [self.navigationController pushViewController:opengles animated:YES];
+    } else if (indexPath.row == 10) {
+
+    } else if (indexPath.row == 11) {
+        ARSCNViewViewController *arscnVC = [[ARSCNViewViewController alloc] init];
+        [self.navigationController pushViewController:arscnVC animated:YES];
     }
 }
 

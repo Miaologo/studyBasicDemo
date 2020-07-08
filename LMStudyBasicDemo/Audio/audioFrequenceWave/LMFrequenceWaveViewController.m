@@ -143,7 +143,8 @@ static const int fftsize = 2048;
     
     FFTSetup weights = self.fftSetup;
     vDSP_fft_zip(weights, &splitComplex, 1, log2n, (FFTDirection)FFT_FORWARD);
-    
+
+    return 0;
     
 }
 

@@ -52,8 +52,12 @@
 		228DC1F31FA3244D002AA12B /* UIScrollView+CYPullRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 228DC1F21FA3244D002AA12B /* UIScrollView+CYPullRefresh.m */; };
 		228DE90821F02AB70075B84E /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228DE90721F02AB70075B84E /* Network.framework */; };
 		228EAB0D205674C8005D478A /* LMScrollLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 228EAB0C205674C8005D478A /* LMScrollLayerView.m */; };
-		22ADDECA2090663000EF9E51 /* MAYCustomMainThreadWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ADDEC92090663000EF9E51 /* MAYCustomMainThreadWatcher.m */; };
+		22ADDECA2090663000EF9E51 /* LMCustomMainThreadWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ADDEC92090663000EF9E51 /* LMCustomMainThreadWatcher.m */; };
 		22DFF89B20CFB23400C013A8 /* NSObject+AddNotifyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DFF89A20CFB23400C013A8 /* NSObject+AddNotifyEvent.m */; };
+		5F19A9B22396103E009CC301 /* LMPhotoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F19A9B12396103E009CC301 /* LMPhotoBaseViewController.m */; };
+		5F19A9B5239610BC009CC301 /* LMPhotoSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F19A9B4239610BC009CC301 /* LMPhotoSaveViewController.m */; };
+		5FE3F94623A642DA009FF4F9 /* LMAppInstruments.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3F94523A642DA009FF4F9 /* LMAppInstruments.m */; };
+		5FE696C724ACF3890003B3AE /* ARSCNViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE696C624ACF3890003B3AE /* ARSCNViewViewController.m */; };
 		AF21D47522D442C800083830 /* LMCrashMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF21D47422D442C800083830 /* LMCrashMainViewController.m */; };
 		AF2782FD22E6FF4E00288E23 /* LMBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2782FC22E6FF4E00288E23 /* LMBacktraceLogger.m */; };
 		AF28DA60228C3AA400FAF19B /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF28DA5F228C3AA400FAF19B /* sample.jpg */; };
@@ -164,10 +168,18 @@
 		228DE90721F02AB70075B84E /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
 		228EAB0B205674C8005D478A /* LMScrollLayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMScrollLayerView.h; sourceTree = "<group>"; };
 		228EAB0C205674C8005D478A /* LMScrollLayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMScrollLayerView.m; sourceTree = "<group>"; };
-		22ADDEC82090663000EF9E51 /* MAYCustomMainThreadWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAYCustomMainThreadWatcher.h; sourceTree = "<group>"; };
-		22ADDEC92090663000EF9E51 /* MAYCustomMainThreadWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAYCustomMainThreadWatcher.m; sourceTree = "<group>"; };
+		22ADDEC82090663000EF9E51 /* LMCustomMainThreadWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMCustomMainThreadWatcher.h; sourceTree = "<group>"; };
+		22ADDEC92090663000EF9E51 /* LMCustomMainThreadWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMCustomMainThreadWatcher.m; sourceTree = "<group>"; };
 		22DFF89920CFB23400C013A8 /* NSObject+AddNotifyEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+AddNotifyEvent.h"; sourceTree = "<group>"; };
 		22DFF89A20CFB23400C013A8 /* NSObject+AddNotifyEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AddNotifyEvent.m"; sourceTree = "<group>"; };
+		5F19A9B02396103E009CC301 /* LMPhotoBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMPhotoBaseViewController.h; sourceTree = "<group>"; };
+		5F19A9B12396103E009CC301 /* LMPhotoBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMPhotoBaseViewController.m; sourceTree = "<group>"; };
+		5F19A9B3239610BC009CC301 /* LMPhotoSaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMPhotoSaveViewController.h; sourceTree = "<group>"; };
+		5F19A9B4239610BC009CC301 /* LMPhotoSaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMPhotoSaveViewController.m; sourceTree = "<group>"; };
+		5FE3F94423A642DA009FF4F9 /* LMAppInstruments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMAppInstruments.h; sourceTree = "<group>"; };
+		5FE3F94523A642DA009FF4F9 /* LMAppInstruments.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMAppInstruments.m; sourceTree = "<group>"; };
+		5FE696C524ACF3890003B3AE /* ARSCNViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSCNViewViewController.h; sourceTree = "<group>"; };
+		5FE696C624ACF3890003B3AE /* ARSCNViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSCNViewViewController.m; sourceTree = "<group>"; };
 		AF21D47322D442C800083830 /* LMCrashMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMCrashMainViewController.h; sourceTree = "<group>"; };
 		AF21D47422D442C800083830 /* LMCrashMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMCrashMainViewController.m; sourceTree = "<group>"; };
 		AF2782FB22E6FF4E00288E23 /* LMBacktraceLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMBacktraceLogger.h; sourceTree = "<group>"; };
@@ -236,13 +248,6 @@
 			path = Audio;
 			sourceTree = "<group>";
 		};
-		223E436521A6C0DE006501DB /* RedPacketRain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RedPacketRain;
-			sourceTree = "<group>";
-		};
 		2242C6881E5ABE4F0054F889 = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +272,8 @@
 		2242C6931E5ABE4F0054F889 /* LMStudyBasicDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5FE696C424ACF3690003B3AE /* ARKit */,
+				5F19A9AF23960F9C009CC301 /* photo */,
 				220B73632237580C00F95601 /* openGL */,
 				2247102621D7789F00027A4F /* basicSensor */,
 				220F769F21100F9A0083E219 /* Audio */,
@@ -282,7 +289,6 @@
 				228DC1E61FA32229002AA12B /* BasicDeviceInfo */,
 				228DC1E51FA321EF002AA12B /* RefreshView */,
 				228DC1DE1FA32173002AA12B /* GIFImageSerialization */,
-				223E436521A6C0DE006501DB /* RedPacketRain */,
 				228DC1EB1FA322C0002AA12B /* JS&Native */,
 				2242C6971E5ABE4F0054F889 /* AppDelegate.h */,
 				2242C6981E5ABE4F0054F889 /* AppDelegate.m */,
@@ -483,10 +489,12 @@
 		22ADDEC7209065F100EF9E51 /* instruments */ = {
 			isa = PBXGroup;
 			children = (
-				22ADDEC82090663000EF9E51 /* MAYCustomMainThreadWatcher.h */,
-				22ADDEC92090663000EF9E51 /* MAYCustomMainThreadWatcher.m */,
+				22ADDEC82090663000EF9E51 /* LMCustomMainThreadWatcher.h */,
+				22ADDEC92090663000EF9E51 /* LMCustomMainThreadWatcher.m */,
 				AF2782FB22E6FF4E00288E23 /* LMBacktraceLogger.h */,
 				AF2782FC22E6FF4E00288E23 /* LMBacktraceLogger.m */,
+				5FE3F94423A642DA009FF4F9 /* LMAppInstruments.h */,
+				5FE3F94523A642DA009FF4F9 /* LMAppInstruments.m */,
 			);
 			path = instruments;
 			sourceTree = "<group>";
@@ -500,6 +508,26 @@
 				AF21D47422D442C800083830 /* LMCrashMainViewController.m */,
 			);
 			path = Crash;
+			sourceTree = "<group>";
+		};
+		5F19A9AF23960F9C009CC301 /* photo */ = {
+			isa = PBXGroup;
+			children = (
+				5F19A9B02396103E009CC301 /* LMPhotoBaseViewController.h */,
+				5F19A9B12396103E009CC301 /* LMPhotoBaseViewController.m */,
+				5F19A9B3239610BC009CC301 /* LMPhotoSaveViewController.h */,
+				5F19A9B4239610BC009CC301 /* LMPhotoSaveViewController.m */,
+			);
+			path = photo;
+			sourceTree = "<group>";
+		};
+		5FE696C424ACF3690003B3AE /* ARKit */ = {
+			isa = PBXGroup;
+			children = (
+				5FE696C524ACF3890003B3AE /* ARSCNViewViewController.h */,
+				5FE696C624ACF3890003B3AE /* ARSCNViewViewController.m */,
+			);
+			path = ARKit;
 			sourceTree = "<group>";
 		};
 		AFAC559B22952E000088B202 /* audioFrequenceWave */ = {
@@ -578,7 +606,7 @@
 				TargetAttributes = {
 					2242C6901E5ABE4F0054F889 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = TD4LPUP5HW;
+						DevelopmentTeam = GTSLGDL3ZA;
 						ProvisioningStyle = Automatic;
 					};
 					2242C6AC1E5ABE4F0054F889 = {
@@ -656,7 +684,7 @@
 				220F76A821100F9A0083E219 /* LMAudioRecordViewController.m in Sources */,
 				220F76AA21100F9A0083E219 /* LMAudioViewController.m in Sources */,
 				228DC1E41FA321EC002AA12B /* AnimatedGIFImageSerialization.m in Sources */,
-				22ADDECA2090663000EF9E51 /* MAYCustomMainThreadWatcher.m in Sources */,
+				22ADDECA2090663000EF9E51 /* LMCustomMainThreadWatcher.m in Sources */,
 				22454E60202D52EB0042A016 /* LMLockViewController.m in Sources */,
 				2242C69C1E5ABE4F0054F889 /* LMRootViewController.m in Sources */,
 				AFAC559E22952E580088B202 /* LMFrequenceWaveViewController.m in Sources */,
@@ -669,6 +697,7 @@
 				2242C6991E5ABE4F0054F889 /* AppDelegate.m in Sources */,
 				227C8C79204CDDAD005899BB /* LMClockView.m in Sources */,
 				AF21D47522D442C800083830 /* LMCrashMainViewController.m in Sources */,
+				5F19A9B5239610BC009CC301 /* LMPhotoSaveViewController.m in Sources */,
 				227D7FC7206DE06A0075B5A5 /* LMThreadViewController.m in Sources */,
 				22370A171F2F274E005E30D9 /* LMRumtimeViewController.m in Sources */,
 				228DC1F31FA3244D002AA12B /* UIScrollView+CYPullRefresh.m in Sources */,
@@ -684,9 +713,12 @@
 				228EAB0D205674C8005D478A /* LMScrollLayerView.m in Sources */,
 				22370A1A1F2F2779005E30D9 /* LMKVOViewController.m in Sources */,
 				225FA7F61F3DA048001CBF16 /* LMTestKVCObject.m in Sources */,
+				5FE3F94623A642DA009FF4F9 /* LMAppInstruments.m in Sources */,
 				225DE3EB202AF4C800C42407 /* AspectProxy.m in Sources */,
 				2242C6961E5ABE4F0054F889 /* main.m in Sources */,
+				5F19A9B22396103E009CC301 /* LMPhotoBaseViewController.m in Sources */,
 				220F76AB21100F9A0083E219 /* LMAudioReplicatorAnimationView.m in Sources */,
+				5FE696C724ACF3890003B3AE /* ARSCNViewViewController.m in Sources */,
 				220FE38A1F7A2D1A0090F1F0 /* MAYRefreshHeaderView.m in Sources */,
 				2241F13F1E695D830063B144 /* RuntimeTestClass.m in Sources */,
 				220B7366223758A800F95601 /* LMOpenGLStudyViewController.m in Sources */,
@@ -840,8 +872,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TD4LPUP5HW;
+				DEVELOPMENT_TEAM = GTSLGDL3ZA;
 				INFOPLIST_FILE = LMStudyBasicDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = studyDemo.com.LMStudyBasicDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -852,8 +885,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TD4LPUP5HW;
+				DEVELOPMENT_TEAM = GTSLGDL3ZA;
 				INFOPLIST_FILE = LMStudyBasicDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = studyDemo.com.LMStudyBasicDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
